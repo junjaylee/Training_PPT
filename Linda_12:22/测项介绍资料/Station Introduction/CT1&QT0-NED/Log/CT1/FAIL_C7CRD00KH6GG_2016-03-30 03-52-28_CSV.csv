@@ -1,0 +1,338 @@
+TestName,Status,Value,DownLimit,UpLimit,TestTime
+TSP,0,D10_CONNECTIVITY-TEST,,,
+Script_Version,0,1.0,,,
+Overlay_Version,0,1.0d1_EVT_2,,,
+"START_TEST_CONNECTIVITY-TEST",0,"PASS",NA,NA,3.435713
+"Initialise Fixture",0,"PASS",NA,NA,2.116432
+"Check DUT Mode",0,"PASS",NA,NA,0.585093
+"Read Fixture SN",0,"0002",NA,NA,0.038476
+"Board ID",0,"D101",NA,NA,0.029520
+"ECID",0,"0x001E243C3020213A",NA,NA,0.042868
+"Read MLB SN",0,"C7H610700A0GXJQD4",NA,NA,0.036837
+"Get FG SN from SFC",0,"C7CRD00KH6GG",NA,NA,0.072045
+"PREVIOUS FG SN",0,"C7CRD00KH6GG",NA,NA,0.034327
+"Burn SN",0,"C7CRD00KH6GG",NA,NA,0.016364
+"Get Link Data via ISN From SFC",0,"PASS",NA,NA,0.036603
+"Set COF Function",0,"PASS",NA,NA,0.044574
+"Write GMT Date and Time",0,"20160330035235",NA,NA,0.032528
+"Diag Version Check",0,"24C210af",NA,NA,0.039150
+"Write CB Incomplete",0,"PASS",NA,NA,0.066189
+"Boost IC Check",0,"0x20",0x20 0x21,0x20 0x21,0.042771
+"Battery Voltage",0,"3936",3600,4350,2.069182
+"Battery Current",0,"-128",NA,NA,0.003734
+"Battery Average Power",0,"-504",NA,NA,0.004387
+"Battery Charge Percentage",0,"63",NA,NA,0.003716
+"Test_spec_ver",0,"D1x_Maggie_spec_ver002",NA,NA,18.065131
+"Maggie_LuaFileRevision",0,"2",NA,NA,0.035308
+"Maggie_MaggieInitialise",0,"0",0,0,0.031972
+"Maggie_MaggieDeviceID",0,"0x47A0",0x47A0,0x47A0,0.032969
+"Maggie_FirmwareVersion",0,"4",4,4,0.033156
+"Maggie_ECONFirmwareVersion",0,"5",5,5,0.034717
+"Maggie_SRAM_Blocks_Test",0,"0",0,0,0.032578
+"Maggie_HW_MAC_Test",0,"0",0,0,0.033244
+"Maggie_LFOscOffset",0,"2042",NA,NA,0.033106
+"Maggie_HFOscOffset:Mean",0,"220.1999999999999",NA,NA,0.033187
+"Maggie_HFOscOffset:Min",0,"211",NA,NA,0.032174
+"Maggie_HFOscOffset:Max",0,"227",NA,NA,0.034514
+"Maggie_HFOscOffset:Cnt",0,"10",NA,NA,0.034034
+"Maggie_ExtRstToPLL_Lock",0,"99",NA,NA,0.033006
+"Maggie_ExtClkToPLL_Lock",0,"0",NA,NA,0.033929
+"MAGGIE_TO_HOMER_WAKE_test",0,"PASS",PASS,PASS,0.033787
+"SPI_MAGGIE_TO_HOMER_POS_SLK_test",0,"PASS",PASS,PASS,0.034141
+"SPI_MAGGIE_TO_HOMER_POS_MOSI_test",0,"PASS",PASS,PASS,0.033444
+"SPI_HOMER_TO_MAGGIE_POS_MISO_test",0,"PASS",PASS,PASS,0.035015
+"AOP_TO_MAGGIE_MENU_1_test",0,"PASS",PASS,PASS,0.034428
+"AOP_TO_MAGGIE_MENU_2_test",0,"PASS",PASS,PASS,0.033214
+"Homer_FW_ver",0,"62",NA,NA,0.035901
+"Homer_I2C_TO_Schrodinger",0,"OK",OK,OK,0.033536
+"HOMER_BOOTLOADER_ALIVE_test",0,"PASS",PASS,PASS,0.034084
+"SWD_AP_BI_HOMER_SWDIO_test",0,"PASS",PASS,PASS,0.034498
+"HOMER_TO_AOP_WAKE_INT_test",0,"PASS",PASS,PASS,0.033434
+"Lifetime Max Temperature",0,"40.3",0,60,0.593974
+"Check MIC1 Exist",0,"Yes",Yes,Yes,1.510500
+"MIC1_dock_vendor_id1",0,"0x01",NA,NA,0.007154
+"MIC1_dock_vendor_id2",0,"0x00",NA,NA,0.007687
+"MIC1 Vendor Check",0,"AAC",AAC GTK Knowles,AAC GTK Knowles,0.006410
+"MIC1 Temperature",0,"28.75",10,50,0.006193
+"Check MIC2 Exist",0,"Yes",Yes,Yes,0.006315
+"MIC2_rear_vendor_id1",0,"0x01",NA,NA,0.008053
+"MIC2_rear_vendor_id2",0,"0x20",NA,NA,0.007931
+"MIC2 Vendor Check",0,"AAC",AAC GTK Knowles,AAC GTK Knowles,0.005949
+"MIC2 Temperature",0,"30.65",10,50,0.006216
+"3K Tone SPK to MIC1_Frequency(L)",0,"3000.000000",2996,3004,1.282090
+"3K Tone SPK to MIC1_Max_Power(L)",0,"0.034220",NA,NA,0.005943
+"3K Tone SPK to MIC4_Frequency(R)",0,"3000.000000",2996,3004,0.007027
+"3K Tone SPK to MIC4_Max_Power(R)",0,"0.167220",NA,NA,0.004561
+"1K Tone to MIC2_Frequency(L)",0,"999.023437",996,1004,1.169481
+"1K Tone to MIC2_Max_Power(L)",0,"0.187654",NA,NA,0.005690
+"1K Tone to MIC2_Frequency(R)",0,"999.023437",996,1004,0.006534
+"1K Tone to MIC2_Max_Power(R)",0,"0.187654",NA,NA,0.004637
+"1K Tone to Low_Power_MIC2_Frequency(L)",0,"996.093750",950,1050,1.078173
+"1K Tone to Low_Power_MIC2_Max_Power(L)",0,"0.322229",NA,NA,0.004461
+"400 Tone to Low_Power_MIC2_Frequency(L)",0,"398.437500",380,420,0.704281
+"400 Tone to Low_Power_MIC2_Max_Power(L)",0,"0.028884",NA,NA,0.005487
+"BOTSPK_VERS",0,"0x26",0x26,0x26,0.210084
+"L26_BOTSPK_VMON_3500mV_P",0,"3.5159",2.8,4.2,0.531883
+"L26_BOTSPK_VMON_3500mV_N",0,"-3.5386",-4.2,-2.8,0.009669
+"L26_BOTSPK_IMON_3500mV_MAX",0,"0.4554",0.2,0.6,0.011278
+"L26_BOTSPK_VMON_7000mV_P",0,"7.0078",5.6,8.4,0.323366
+"L26_BOTSPK_VMON_7000mV_N",0,"-7.0355",-8.4,-5.6,0.008164
+"L26_BOTSPK_IMON_7000mV_MAX",0,"0.8925",0.7,1.1,0.011121
+"L26_BOTSPK_IPK_VBST",0,"6.6842",NA,NA,0.615594
+"L26_BOTSPK_IPK_VBST_DELTA",0,"1.33110",0.2,NA,0.009925
+"L26_BOTSPK_CH0_FREQ",0,"300.292968",298,302,1.540990
+"L26_BOTSPK_CH0_THD",0,"-72.927681",NA,-60,0.006645
+"TOPSPK_VERS",0,"0x26",0x26,0x26,0.189122
+"ARC_VERS",0,"0x26",0x26,0x26,0.206861
+"L26_ARC_VMON_3500mV_P",0,"3.4796",2.8,4.2,0.481838
+"L26_ARC_VMON_3500mV_N",0,"-3.5023",-4.2,-2.8,0.009512
+"L26_ARC_IMON_3500mV_MAX_WithArc",0,"0.4092",0.2,0.6,0.010547
+"L26_ARC_VMON_7000mV_P",0,"6.92400",5.6,8.4,0.240643
+"L26_ARC_VMON_7000mV_N",0,"-6.96900",-8.4,-5.6,0.009889
+"L26_ARC_IMON_7000mV_MAX_WithArc",0,"0.8925",0.6,1,0.011200
+"L26_ARC_IPK_VBST_WithArc",0,"6.5469",NA,NA,0.514022
+"L26_ARC_IPK_VBST_DELTA_WithArc",0,"1.46840",0.2,NA,0.011260
+"L26_ARC_CH0_FREQ",0,"300.292968",298,302,3.100994
+"L26_ARC_CH0_THD",0,"-75.145951",NA,-60,0.006548
+"L26_ARC_ACCEL_PEAK_FREQ_X",0,"300.480468",NA,NA,0.009299
+"L26_ARC_ACCEL_PEAK_FREQ_Y",0,"300.480468",NA,NA,0.004560
+"L26_ARC_ACCEL_PEAK_FREQ_Z",0,"300.480468",NA,NA,0.005261
+"L26_ARC_ACCEL_PEAK_MAGNITUDE_X",0,"0.004834",NA,NA,0.010231
+"L26_ARC_ACCEL_PEAK_MAGNITUDE_Y",0,"0.006739",NA,NA,0.005169
+"L26_ARC_ACCEL_PEAK_MAGNITUDE_Z",0,"0.009468",NA,NA,0.004509
+"BotSpeaker Impedance Voltage",0,"485.242792",NA,NA,1.996293
+"BotSpeaker Impedance Current",0,"63.973374",NA,NA,0.083096
+"BotSpeaker Impedance RDC",0,"7.58507",6.8,8.2,0.004450
+"adc_vddout",0,"3923.2295",3400,4350,11.024605
+"cpu_voltage",0,"600",NA,NA,0.005248
+"soc_voltage",0,"741",NA,NA,0.005251
+"gpu_voltage",0,"678",NA,NA,0.006272
+"buck0_measured_value",0,"606.9597",PASS,PASS,0.010468
+"buck1_measured_value",0,"688.9194",PASS,PASS,0.011086
+"buck2_measured_value",0,"742.3076",PASS,PASS,0.009928
+"buck3_measured_value",0,"1797.3137",PASS,PASS,0.010917
+"buck4_measured_value",0,"1103.3882",PASS,PASS,0.009719
+"buck5_measured_value",0,"898.2600",PASS,PASS,0.012355
+"buck6_measured_value",0,"1264.6520",PASS,PASS,0.009459
+"buck7_measured_value",0,"802.6556",PASS,PASS,0.010744
+"buck8_measured_value",0,"803.6630",PASS,PASS,0.010500
+"buck9_measured_value",0,"2496.9474",PASS,PASS,0.010967
+"adc_brick_id_usb_dm",0,"1",0,50,0.006599
+"adc_brick_id_usb_dp",0,"3",0,50,0.007319
+"adc_tcal",0,"3986.5689",3528,4312,0.007055
+"adc_temp1_forehead",0,"8236.5758",3800,12800,0.007083
+"adc_temp2_rear_camera",0,"7614.2568",3200,12800,0.007341
+"adc_temp3_radio_pa",0,"8090.1478",4900,13300,0.007301
+"adc_temp4_ap",0,"6412.3268",2000,12000,0.006474
+"adc_temp5_nc",0,"77680.0622",58000,94000,0.006492
+"adc_temp_ldo5",0,"39.8379",15,70,0.007296
+"adc_temp_ldo10",0,"39.8157",15,70,0.007090
+"adc_temp_buck0",0,"39.0165",15,70,0.007395
+"adc_temp_buck1",0,"39.0387",15,70,0.007064
+"adc_temp_buck2",0,"39.1719",15,70,0.007287
+"adc_temp_buck3",0,"39.0609",15,70,0.007163
+"adc_temp_buck4",0,"39.2607",15,70,0.007109
+"adc_temp_buck5",0,"39.0831",15,70,0.007104
+"adc_temp_buck6",0,"38.8168",15,70,0.007061
+"adc_temp_buck7",0,"39.5049",15,70,0.007239
+"adc_temp_buck8",0,"38.8389",15,70,0.007082
+"adc_temp_buck9",0,"38.8389",15,70,0.007244
+"adc_temp_hib_sw",0,"39.4383",15,70,0.007609
+"adc_tjint",0,"39.4605",15,70,0.007164
+"adc_ibuck0_pp_cpu_var",0,"81.9599",NA,NA,0.007177
+"adc_ibuck1_pp_gpu_var",0,"0.0000",NA,NA,0.008464
+"adc_ibuck2_pp_soc_var",0,"248.7274",NA,NA,0.007299
+"adc_ibuck3_pp1v8_sdram",0,"69.7600",NA,NA,0.007476
+"adc_ibuck4_pp1v1_sdram",0,"201.7574",NA,NA,0.007326
+"adc_ibuck5_pp0v9_soc_fixed",0,"206.0800",NA,NA,0.007259
+"adc_ibuck6_pp1v25_buck",0,"39.6799",NA,NA,0.007161
+"adc_ibuck7_pp_cpu_sram_var",0,"0.0000",NA,NA,0.007360
+"adc_ibuck8_pp_gpu_sram_var",0,"0.0000",NA,NA,0.007215
+"adc_ibuck9_pp2v8_ut_af_var",0,"0.0000",NA,NA,0.007423
+"adc_buck0_pp_cpu_var",0,"606.3186",NA,NA,0.007233
+"adc_buck1_pp_gpu_var",0,"683.2417",NA,NA,0.006878
+"adc_buck2_pp_soc_var",0,"743.4065",NA,NA,0.007235
+"adc_buck3_pp1v8_sdram",0,"1799.4505",NA,NA,0.007350
+"adc_buck4_pp1v1_sdram",0,"1102.1062",NA,NA,0.006787
+"adc_buck5_pp0v9_soc_fixed",0,"898.9926",NA,NA,0.007207
+"adc_buck6_pp1v25_buck",0,"1267.3992",NA,NA,0.010224
+"adc_buck7_pp_cpu_sram",0,"802.6556",NA,NA,0.007443
+"adc_buck8_pp_gpu_sram",0,"799.9084",NA,NA,0.007085
+"adc_buck9_pp2v5_ut_af_var",0,"2494.5054",NA,NA,0.006673
+"adc_buck3_sw1_pp1v8",0,"1795.1770",1690,1854,0.007342
+"adc_buck3_sw2_PP1V8_TOUCH",0,"1794.2612",1690,1854,0.007159
+"adc_buck3_sw3_PP1V8_MAGGIE_IMU",0,"1797.9242",1690,1854,0.008554
+"adc_buck4_sw1_pp1v1",0,"1101.3736",NA,NA,0.007215
+"adc_ldo1_pp3v3_usb",0,"3289.2505",3253.8,3346.2,0.006738
+"adc_ldo2_pp1v8_va",0,"1804.0293",1755,1845,0.007411
+"adc_ldo3_pp3v0_als_aps_convoy",0,"2996.1318",2925,3075,0.007421
+"adc_ldo4_pp0v8_aop",0,"802.4725",780,820,0.007302
+"adc_ldo5_pp3v0_nand",0,"2999.6947",2925,3075,0.007560
+"adc_ldo6_pp3v3_acc_var",0,"3297.0439",3217.5,3382.5,0.007404
+"adc_ldo7_pp3v0_tristar_ant_prox",0,"2998.7296",2970,3030,0.007636
+"adc_ldo8_pp2v9_nh_avdd",0,"2901.3120",2870,2930,0.007411
+"adc_ldo9_pp1v8_hawking",0,"1800.2769",1775,1825,0.008091
+"adc_ldo10_pp0v9_nand",0,"904.8534",873,927,0.007312
+"adc_ldo11_nc",0,"0.0000",0,100,0.007231
+"adc_ldo12_pp1v8_always",0,"1798.5347",1746,1854,0.007462
+"adc_ldo13_pp3v0_mesa",0,"3009.1208",2970,3030,0.006371
+"adc_ldo14_pp1v2_soc",0,"1198.8095",1164,1236,0.007318
+"adc_ldo15_pp1v8_mesa",0,"1797.3137",1755,1845,0.007414
+"adc_ldo16_nc",0,"0.0000",0,100,0.006757
+"adc_ldo17_pp3v0_nc",0,"0.4329",0,100,0.007702
+"adc_ldo18_pp1v2_ut_dvdd",0,"1200.7326",1164,1236,0.007608
+"adc_ldo19_pp1v2_nh_nv_dvdd",0,"1205.5860",1164,1236,0.007397
+"adc_vrtc",0,"1497.8632",1470,1530,0.007334
+"adc_vbuf_1v2",0,"1200.6410",1176,1224,0.007453
+"adc_ibuf_1v2",0,"0.0394",NA,NA,0.007248
+"adc_ildo1_pp3v3_usb",0,"0.1366",-5,5,0.007524
+"adc_ildo2_pp1v8_va",0,"17.4198",10,40,0.007512
+"adc_ildo3_pp3v0_als_aps_convoy",0,"8.7525",5,15,0.007286
+"adc_ildo4_pp0v8_aop",0,"12.5904",5,15,0.007365
+"adc_ildo5_pp3v0_nand",0,"0.4360",-5,5,0.007409
+"adc_ildo6_pp3v3_acc_var",0,"0.5713",0,3,0.007393
+"adc_ildo7_pp3v0_tristar_ant_prox",0,"1.6699",-2,4,0.007520
+"adc_ildo8_pp2v9_nh_avdd",0,"0.5273",-5,5,0.007476
+"adc_ildo9_pp1v8_hawking",0,"0.7910",0,5,0.006619
+"adc_ildo10_pp0v9_nand",0,"175.1648",100,220,0.007238
+"adc_ildo11_nc",0,"0.7031",-2,3,0.007390
+"adc_ildo12_pp1v8_always",0,"0.0673",0,0.5,0.007639
+"adc_ildo13_pp3v0_mesa",0,"1.5820",0,5,0.007534
+"adc_ildo14_pp1v2_soc",0,"39.3507",20,90,0.007447
+"adc_ildo15_pp1v8_mesa",0,"0.1365",0,1,0.007092
+"adc_ildo16_nc",0,"0.6591",0,3,0.007114
+"adc_ildo17_pp3v0_nc",0,"0.1205",0,3,0.007475
+"adc_ildo18_pp1v2_ut_dvdd",0,"2.8693",-5,10,0.006752
+"adc_ildo19_pp1v2_nh_nv_dvdd",0,"0.2049",-5,10,0.007419
+"adc_irtc",0,"0.2735",0,0.8,0.007244
+"adc_amuxa0_ap_to_pmu_amux_out",0,"0.0000",0,100,0.007241
+"adc_amuxa1_nc_pmu_adc_in",0,"387.9731",0,5000,0.007218
+"adc_amuxa2_nc",0,"377.5946",0,5000,0.007313
+"adc_amuxa3_button_vol_up_l",0,"1786.3247",1765,1830,0.008288
+"adc_amuxa4_nc",0,"378.8156",0,5000,0.007291
+"adc_amuxa5_lcm_to_chestnut_pwr_en",1,"1774.7252",0,100,0.007316
+"adc_amuxa6_tristar_to_pmu_usb_brick_id",0,"0.3052",0,100,0.007166
+"adc_amuxa7_nc",0,"1206.6544",0,5000,0.007504
+"adc_amuxay_pmu_amux_ay",0,"442.9181",0,5000,0.007447
+"adc_amuxb2_nc",0,"825.3968",0,5000,0.007236
+"adc_amuxb3_nc",0,"839.4383",0,5000,0.007376
+"adc_amuxb4_pmugpio_to_wlan_clk32k",0,"0.0000",0,5000,0.007383
+"adc_amuxb5_chestnut_to_pmu_adcmux",0,"0.9157",0,5000,0.007397
+"adc_amuxb6_ap_to_pmu_test_clkout",0,"817.7655",0,5000,0.007567
+"adc_amuxby_pmu_amux_by",0,"897.7411",0,5000,0.006450
+"chestnut_Ground",0,"0.3052",0,20,0.007485
+"chestnut_VIN",0,"3879.7936",3400,4350,0.007338
+"chestnut_VREF",0,"1225.9848",1211,1275,0.007372
+"chestnut_VBST",0,"6021.9447",5820,6180,0.008929
+"chestnut_VLDO1",1,"5677.2403",-55,55,0.007421
+"chestnut_VLDO2",1,"5649.8301",-55,55,0.007191
+"chestnut_VLDO3",0,"0.8306",-55,55,0.007466
+"chestnut_VNEG",1,"-5708.8036",-55,55,0.007269
+"chestnut_ILDO1",0,"4.2196",-5,5,0.007087
+"chestnut_ILDO2",0,"2.7943",-5,5,0.007706
+"chestnut_ILDO3",0,"0.0250",-5,5,0.007216
+"chestnut_Ineg",1,"8.5642",-5,5,0.010665
+"chestnut_Die_temp",0,"29.3267",10,55,0.006962
+"tigris_adc_vbus",0,"5175.0000",4505,5495,0.011517
+"tigris_adc_ibus",0,"0.0000",0,20,0.012463
+"tigris_adc_vbat",0,"3870.0000",3400,4350,0.012863
+"tigris_adc_ibat",0,"160.0000",140,180,0.012736
+"tigris_adc_vdd",0,"3870.0000",3400,4350,0.012812
+"tigris_adc_die_temp",0,"30.9746",10,55,0.014760
+"Hold",0,"PASS",PASS,PASS,1.256609
+"Vol_Up",0,"PASS",PASS,PASS,1.192297
+"Vol_Dw",0,"PASS",PASS,PASS,1.276002
+"Ringer",0,"PASS",PASS,PASS,3.209759
+"PMUHold",0,"PASS",PASS,PASS,0.014761
+"PMUVolDown",0,"PASS",PASS,PASS,0.013526
+"PMURinger",0,"PASS",PASS,PASS,0.013618
+"Hawking Test Peak Magnitude",0,"0.091241",NA,NA,1.905433
+"Hawking Test Frequency",0,"500.976562",485,515,0.007473
+"Hawking Test DC Magnitude",0,"0.000098",NA,NA,0.006686
+"Hawking Test SINAD",0,"50.463755",NA,NA,0.006832
+"Hawking Test THD+N",0,"-1.350104",NA,NA,0.007150
+"Neon1 Revision",0,"3",3,3,2.121917
+"Neon2 Revision",0,"3",3,3,0.008819
+"4xLED Measure Strobe_Flash Mode",1,"FAIL",PASS,PASS,1.155079
+"Neon1 4xLED Register 0xA Check",0,"1",1,1,0.040175
+"Neon1 4xLED Register 0xB Check",0,"0",0,0,0.041773
+"Neon2 4xLED Register 0xA Check",0,"1",1,1,0.038701
+"Neon2 4xLED Register 0xB Check",0,"0",0,0,0.040848
+"4xLED Measure Strobe Off",0,"PASS",PASS,PASS,0.592694
+"Neon1LED1 Measure Cool Strobe_Flash Mode",1,"FAIL",PASS,PASS,1.955899
+"Neon1LED1 Register 0xA Check",0,"1",1,1,0.042774
+"Neon1LED1 Register 0xB Check",0,"0",0,0,0.043374
+"Neon1LED1 Measure Cool Strobe Off",0,"PASS",PASS,PASS,0.085211
+"Neon1LED2 Measure Amber Strobe_Flash Mode",0,"PASS",PASS,PASS,0.342366
+"Neon1LED2 Register 0xA Check",0,"1",1,1,0.040743
+"Neon1LED2 Register 0xB Check",0,"0",0,0,0.042523
+"Neon1LED2 Measure Amber Strobe Off",0,"PASS",PASS,PASS,0.085941
+"Neon2LED1 Measure Cool Strobe_Flash Mode",0,"PASS",PASS,PASS,0.333771
+"Neon2LED1 Register 0xA Check",0,"1",1,1,0.040641
+"Neon2LED1 Register 0xB Check",0,"0",0,0,0.041380
+"Neon2LED1 Measure Cool Strobe Off",0,"PASS",PASS,PASS,0.089850
+"Neon2LED2 Measure Amber Strobe_Flash Mode",0,"PASS",PASS,PASS,0.348111
+"Neon2LED2 Register 0xA Check",0,"1",1,1,0.041243
+"Neon2LED2 Register 0xB Check",0,"0",0,0,0.041875
+"Neon2LED2 Measure Amber Strobe Off",0,"PASS",PASS,PASS,0.259467
+"Find Camera_Back",0,"back  detected",back  detected,back  detected,1.162970
+"Pick Camera_Back",0,"Pass",Pass,Pass,0.036918
+"Camera Dli_Back",0,"Pass",NA,NA,2.520126
+"Preview On Camera_Back",0,"Pass",Pass,Pass,1.822447
+"Back Camera RGB",0,"PASS",NA,NA,3.296161
+"SphereSelfTest",0,"Pass",Pass,Pass,7.845026
+"Back Camera Displacement_Avg[-850 0]",0,"1.642372",NA,NA,0.004799
+"Back Camera Displacement_Std[-850 0]",0,"1.035214",NA,NA,0.005396
+"Back Camera Displacement_Avg[-600 600]",0,"2.168315",NA,NA,0.002265
+"Back Camera Displacement_Std[-600 600]",0,"0.808408",NA,NA,0.001788
+"Back Camera Displacement_Avg[0 850]",0,"1.586198",NA,NA,0.002028
+"Back Camera Displacement_Std[0 850]",0,"1.210859",NA,NA,0.001812
+"Back Camera Displacement_Avg[600 600]",0,"1.738634",NA,NA,0.002526
+"Back Camera Displacement_Std[600 600]",0,"1.055601",NA,NA,0.002248
+"Back Camera Displacement_Avg[850 0]",0,"1.515647",NA,NA,0.002353
+"Back Camera Displacement_Std[850 0]",0,"0.966408",NA,NA,0.002727
+"Back Camera Displacement_Avg[600 -600]",0,"2.704834",NA,NA,0.002207
+"Back Camera Displacement_Std[600 -600]",0,"1.456449",NA,NA,0.002248
+"Back Camera Displacement_Avg[0 -850]",0,"1.608259",NA,NA,0.002389
+"Back Camera Displacement_Std[0 -850]",0,"1.165673",NA,NA,0.001861
+"Back Camera Displacement_Avg[-600 -600]",0,"2.207236",NA,NA,0.002347
+"Back Camera Displacement_Std[-600 -600]",0,"1.127143",NA,NA,0.002272
+"ACC2 Zero Current Backpower Test",0,"0x0",0x0,0x0,0.222426
+"ACC1 Zero Current Backpower Test",0,"0x0",0x0,0x0,0.156495
+"ACC2 Normal vldo6 70mA",0,"3297.9098",3200,3400,0.372740
+"ACC2 Normal ildo6 70mA",0,"70.4018",50,115,0.083455
+"ACC2 Normal V_R 70mA",0,"1604.0903",NA,NA,0.178069
+"ACC2 Normal ildo6 100mA",0,"104.7239",80,145,0.072965
+"ACC2 Normal V_R 100mA",0,"1585.1648",NA,NA,0.150641
+"ACC2_Normal_Current 100mA",0,"105.67765",NA,NA,0.002027
+"ACC2 Normal vldo6 100mA Inrush",0,"3301.3736",NA,NA,0.301279
+"ACC2_BrickID_SWAP1",0,"10.3785",NA,NA,0.177337
+"ACC2 Bypass vldo6",0,"3866.8285",3400,4350,0.104669
+"ACC2 Bypass ildo6",0,"0.6591",NA,NA,0.036699
+"ACC2 Bypass V_R",0,"1860.5006",NA,NA,0.180856
+"ACC2_Bypass_Impedance",0,"124.03337",NA,NA,0.012441
+"ACC2_BrickID_SWAP2",0,"15.5677",NA,NA,0.175704
+"ACC2_BrickID_SWAP3",0,"1856.8376",NA,NA,0.218599
+"ACC1 Normal vldo6 70mA",0,"3302.2395",3200,3400,0.566526
+"ACC1 Normal ildo6 70mA",0,"78.6637",55,115,0.044721
+"ACC1_BrickID_SWAP1",0,"8.8522",NA,NA,0.186004
+"ACC1 Normal V_R 70mA",0,"1605.3113",NA,NA,0.177367
+"ACC1_Normal_Current 70mA",0,"107.02075",NA,NA,0.002696
+"ACC1 Normal vldo6 100mA",0,"3294.4461",3200,3400,0.162980
+"ACC1 Normal ildo6 100mA",0,"117.2925",85,145,0.045104
+"ACC1 Normal vldo6 100mA Inrush",0,"3300.5076",NA,NA,0.789311
+"ACC1 Bypass vldo6",0,"3862.0659",3400,4350,0.069581
+"ACC1 Bypass ildo6",0,"0.7470",NA,NA,0.034113
+"ACC1_BrickID_SWAP2",0,"11.9047",NA,NA,0.167589
+"ACC1 Bypass V_R",0,"1863.8583",NA,NA,0.177706
+"ACC1_Bypass_Impedance",0,"124.25722",NA,NA,0.016448
+"ACC1_BrickID_SWAP3",0,"1862.9426",NA,NA,0.796427
+"AmIOk",0,"PASS",NA,NA,0.005793
+"Unit SN Changed",0,"C7CRD00KH6GG",NA,NA,0.030531
+"Write CT1 CB",0,"UnNeed to set CB!",NA,NA,0.047763
+"Reset Fixture",0,"PASS",NA,NA,4.889596
+"END_TEST_CONNECTIVITY-TEST",0,"PASS",NA,NA,0.006884
+ISN,0,C7CRD00KH6GG,,,
+Test Start Time,0,03:52:28,,,
+Test End Time,0,03:54:23,,,
+Test Cost Time,0,114.841759,,,

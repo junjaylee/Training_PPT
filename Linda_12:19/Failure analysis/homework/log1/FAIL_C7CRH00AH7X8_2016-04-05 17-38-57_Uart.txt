@@ -1,0 +1,4452 @@
+PEGATRON ATS
+PROJECT: D10
+STATION: PGPD_F02-3FA-02_4_QT1-PREBURN
+Overlay_Version : 1.0d39_EVT_32
+
+================================== START TEST START_TEST_QT1 (Item0) ==================================
+Item Name:START_TEST_QT1, {NA}
+================================ START TEST INITIALISE FIXTURE (Item1) ================================
+[2016-04-05 17:39:00.40](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:00.40](TX ==> [FIXTURE]):DUT Find
+[2016-04-05 17:39:00.40](RX ==> [FIXTURE]):DUT Find
+DUT Find Pass
+@_@
+
+[2016-04-05 17:39:00.40](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:00.40](TX ==> [FIXTURE]):Kong To CB Short
+[2016-04-05 17:39:00.40](RX ==> [FIXTURE]):Kong To CB Short
+Kong To CB Short Pass
+@_@
+
+[2016-04-05 17:39:00.40](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:00.40](TX ==> [FIXTURE]):Hold In
+[2016-04-05 17:39:00.40](RX ==> [FIXTURE]):Hold In
+Hold In Pass
+@_@
+
+[2016-04-05 17:39:00.40](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:00.40](TX ==> [FIXTURE]):Bacon In
+[2016-04-05 17:39:00.40](RX ==> [FIXTURE]):Bacon In
+Bacon In Pass
+@_@
+
+Item Name:Initialise Fixture, {NA}
+================================== START TEST READ FIXTURE SN (Item3) ==================================
+[2016-04-05 17:39:01.41](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:01.41](TX ==> [FIXTURE]):Read Fixture SN
+[2016-04-05 17:39:01.41](RX ==> [FIXTURE]):Read Fixture SN
+SN:0001
+@_@
+
+Item Name:Read Fixture SN, {NA}
+================================== START TEST CHECK DUT MODE (Item4) ==================================
+[2016-04-05 17:39:01.41](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:01.41](TX ==> [MOBILE]):
+[2016-04-05 17:39:04.44](RX ==> [MOBILE]):þ
+
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):
+Command 'þ' not found.
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):
+[001D38CC:3020213A] :-) 
+
+Item Name:Check DUT Mode, {NA}
+===================================== START TEST BOARD ID (Item6) =====================================
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):boardid
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):boardid
+Board Id: 0x08
+[001D38CC:3020213A] :-) 
+
+Item Name:Board ID, {NA}
+======================================= START TEST ECID (Item7) =======================================
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):chipid
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):chipid
+Chip  ID: 8010 Version: 8.0 
+Die   ID: 000000CC:3020213A
+Fuse  ID: 82000000:00000084
+ECID    : 0x001D38CC3020213A
+Raw ECID: 001D38CC:3020213A
+[001D38CC:3020213A] :-) 
+
+Item Name:ECID, {NA}
+======================================== START TEST SN (Item8) ========================================
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):sn
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):sn
+Serial: C7CRH00AH7X8
+[001D38CC:3020213A] :-) 
+
+Item Name:SN, {NA}
+================================ START TEST DIAG VERSION CHECK (Item9) ================================
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):ver
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):ver
+D10 Diag (factory_d10_evt)
+BuildEng build D10Casaval24C210ai (24C210ai). Revision d9cf7ba.
+	Built at 2016/03/30 22:07:16
+[001D38CC:3020213A] :-) 
+
+Item Name:Diag Version Check, {NA}
+================================== START TEST BOOST IC CHECK (Item10) ==================================
+[2016-04-05 17:39:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:07.47](TX ==> [MOBILE]):i2c --devread 0 0x75 0x05 1
+[2016-04-05 17:39:07.47](RX ==> [MOBILE]):i2c --devread 0 0x75 0x05 1
+Reading 1 bytes from register offset 0x05 into 0x79CEA818, buffer read:	
+Data:  0x20 
+[001D38CC:3020213A] :-) 
+
+Item Name:Boost IC Check, <0x20,0x21>
+==================================== START TEST CHECK UOP (Item11) ====================================
+Item Name:Check UOP, {NA}
+====================== START TEST NETWORK CB: CHECK PREVIOUS STATION CBS (Item12) ======================
+Item Name:NetWork CB: Check Previous Station CBs, {NA}
+======================================= START TEST SLOT (Item13) =======================================
+Item Name:Slot, {NA}
+========================== START TEST GET LINK DATA VIA ISN FROM SFC (Item14) ==========================
+Item Name:Get Link Data via ISN From SFC, {NA}
+================================= START TEST SET COF FUNCTION (Item15) =================================
+Item Name:Set COF Function, {NA}
+=============================== START TEST WRITE CB INCOMPLETE (Item16) ===============================
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):rtc --set 20160405173908
+[2016-04-05 17:39:08.48](RX ==> [MOBILE]):rtc --set 20160405173908
+20160405173908
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):cbwrite 0x81 incomplete 1.0d39_EVT_32
+[2016-04-05 17:39:08.48](RX ==> [MOBILE]):cbwrite 0x81 incomplete 1.0d39_EVT_32
+0x81 Incomplete 0 0 13 150485948 1.0d39_EVT_32
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:Write CB Incomplete, {NA}
+=============================== START TEST I2C ISOLATOR ENABLE (Item17) ===============================
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 1
+[2016-04-05 17:39:08.48](RX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 1
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:I2C Isolator Enable, {NA}
+===================================== START TEST CG COLOR (Item18) =====================================
+Item Name:CG Color, {NA}
+================================== START TEST PROX_QT_DEV_ID (Item19) ==================================
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):sensor --sel prox --init
+[2016-04-05 17:39:08.48](RX ==> [MOBILE]):sensor --sel prox --init
+Turning off power to 'prox' sensor...
+Turning on power to 'prox' sensor...
+Resetting 'prox' sensor...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):sensorreg --sel prox --read 0x00 2
+[2016-04-05 17:39:08.48](RX ==> [MOBILE]):sensorreg --sel prox --read 0x00 2
+Reading in 2 registers from 0x0:
+0x00 = 0xD0
+0x01 = 0x12
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:PROX_QT_DEV_ID, [208,208]
+================================== START TEST PROX_QT_REV_ID (Item20) ==================================
+Item Name:PROX_QT_REV_ID, [18,18]
+========================== START TEST PROX_QT_NO_TARGET_RAW_DIST_AVE (Item21) ==========================
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):sensor --sel prox --set datatype norm
+[2016-04-05 17:39:08.48](RX ==> [MOBILE]):sensor --sel prox --set datatype norm
+Setting parameter 'datatype' to norm for 'prox'
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:08.48](TX ==> [MOBILE]):sensor --sel prox --sample 32 --stats
+[2016-04-05 17:39:09.49](RX ==> [MOBILE]):sensor --sel prox --sample 32 --stats
+Capturing 32 samples from:
+prox @ 60.00 Hz
+
+Output format = abstime : relativetime : sample
+Waiting for capture to finish...
+prox:		 289s:056881us (+00s:000000us) = 36.481819, 82.061411, 0.967880, 8824.285139, 104.078828, 9987.622068
+prox:		 289s:068647us (+00s:011766us) = 34.006526, 82.696190, 1.093579, 8892.544630, 117.595558, 9987.622068
+prox:		 289s:080413us (+00s:011766us) = 33.237072, 83.189558, 1.231848, 8945.597799, 132.463962, 9987.622068
+prox:		 289s:092173us (+00s:011760us) = 36.231566, 82.588299, 0.892461, 8880.942770, 95.968789, 9987.622068
+prox:		 289s:103930us (+00s:011757us) = 33.954359, 82.904641, 1.357547, 8914.959876, 145.980693, 9987.622068
+prox:		 289s:115688us (+00s:011758us) = 33.512974, 83.405341, 0.955310, 8968.801521, 102.727154, 9987.622068
+prox:		 289s:127441us (+00s:011753us) = 33.450519, 83.431528, 0.867321, 8971.617506, 93.265443, 9987.622068
+prox:		 289s:139196us (+00s:011755us) = 35.473704, 84.170009, 1.081009, 9051.028300, 116.243885, 9987.622068
+prox:		 289s:150951us (+00s:011755us) = 35.524567, 83.564559, 1.256987, 8985.922713, 135.167309, 9987.622068
+prox:		 289s:162705us (+00s:011754us) = 33.682225, 83.910231, 1.206708, 9023.093723, 129.760616, 9987.622068
+prox:		 289s:174456us (+00s:011751us) = 34.598034, 83.693401, 1.143859, 8999.777362, 123.002251, 9987.622068
+prox:		 289s:186207us (+00s:011751us) = 36.871908, 83.515327, 1.168998, 8980.628660, 125.705597, 9987.622068
+prox:		 289s:197962us (+00s:011755us) = 36.352708, 83.321542, 1.407826, 8959.790367, 151.387386, 9987.622068
+prox:		 289s:209717us (+00s:011755us) = 34.361257, 83.907089, 1.043300, 9022.755805, 112.188866, 9987.622068
+prox:		 289s:221469us (+00s:011752us) = 36.191572, 83.401151, 1.307267, 8968.350963, 140.574001, 9987.622068
+prox:		 289s:233222us (+00s:011753us) = 34.596005, 84.053737, 1.118719, 9038.525324, 120.298905, 9987.622068
+prox:		 289s:244972us (+00s:011750us) = 35.139695, 84.461211, 1.030730, 9082.342060, 110.837193, 9987.622068
+prox:		 289s:256722us (+00s:011750us) = 35.790760, 83.139278, 1.382686, 8940.191107, 148.684040, 9987.622068
+prox:		 289s:268472us (+00s:011750us) = 34.043477, 84.636142, 1.307267, 9101.152844, 140.574001, 9987.622068
+prox:		 289s:280222us (+00s:011750us) = 35.348795, 83.654644, 1.168998, 8995.609704, 125.705597, 9987.622068
+prox:		 289s:291972us (+00s:011750us) = 36.185051, 84.311420, 1.244418, 9066.234623, 133.815636, 9987.622068
+prox:		 289s:303721us (+00s:011749us) = 34.340245, 84.436071, 1.156428, 9079.638714, 124.353924, 9987.622068
+prox:		 289s:315469us (+00s:011748us) = 37.083182, 84.317705, 1.583804, 9066.910459, 170.310809, 9987.622068
+prox:		 289s:327219us (+00s:011750us) = 36.097527, 84.964006, 1.332407, 9136.408984, 143.277347, 9987.622068
+prox:		 289s:338970us (+00s:011751us) = 36.661214, 84.454926, 1.357547, 9081.666224, 145.980693, 9987.622068
+prox:		 289s:350716us (+00s:011746us) = 34.994064, 84.255903, 1.219278, 9060.264733, 131.112289, 9987.622068
+prox:		 289s:362463us (+00s:011747us) = 35.127668, 84.446546, 1.018160, 9080.765108, 109.485520, 9987.622068
+prox:		 289s:374210us (+00s:011747us) = 35.022176, 84.531393, 1.143859, 9089.888902, 123.002251, 9987.622068
+prox:		 289s:385958us (+00s:011748us) = 36.150998, 84.326085, 1.143859, 9067.811575, 123.002251, 9987.622068
+prox:		 289s:397706us (+00s:011748us) = 34.866256, 85.400809, 1.131289, 9183.379624, 121.650578, 9987.622068
+prox:		 289s:409454us (+00s:011748us) = 34.663387, 84.506253, 1.307267, 9087.185556, 140.574001, 9987.622068
+prox:		 289s:421201us (+00s:011747us) = 35.350389, 84.536630, 1.407826, 9090.452099, 151.387386, 9987.622068
+
+
+Stats:
+
+prox:
+	# of samples captured: 32
+	# of bad samples (corrupted/lost): 0
+	calculated odr: 85.093347Hz
+	average: rawrange = 35.168491
+	average: signalrateperspad = 83.881032, ambientrateperspad = 1.188639
+	average: totalsignalrate = 9019.953899, totalambientrate = 127.817586
+	average: integrationtime = 9987.622068
+	std-dev: rawrange = 1.056934
+	std-dev: signalrateperspad = 0.730568, ambientrateperspad = 0.160725
+	std-dev: totalsignalrate = 78.559956, totalambientrate = 17.283247
+	std-dev: integrationtime = 0.000000
+	rms: rawrange = 35.184369
+	rms: signalrateperspad = 83.884214, ambientrateperspad = 1.199456
+	rms: totalsignalrate = 9020.296005, totalambientrate = 128.980797
+	rms: integrationtime = 9987.622068
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:PROX_QT_NO_TARGET_RAW_DIST_AVE, [-20,100]
+========================== START TEST PROX_QT_NO_TARGET_RAW_DIST_STD (Item22) ==========================
+Item Name:PROX_QT_NO_TARGET_RAW_DIST_STD, [0.01,3]
+============================ START TEST PROX_QT_NO_TARGET_SIG_AVE (Item23) ============================
+Item Name:PROX_QT_NO_TARGET_SIG_AVE, [20,300]
+============================ START TEST PROX_QT_NO_TARGET_SIG_STD (Item24) ============================
+Item Name:PROX_QT_NO_TARGET_SIG_STD, [0.01,3]
+============================ START TEST PROX_QT_NO_TARGET_AMB_AVE (Item25) ============================
+Item Name:PROX_QT_NO_TARGET_AMB_AVE, [0.5,3]
+============================ START TEST PROX_QT_NO_TARGET_AMB_STD (Item26) ============================
+Item Name:PROX_QT_NO_TARGET_AMB_STD, [0.01,0.5]
+=========================== START TEST PROX_QT_TARGET_RAW_DIST_AVE (Item27) ===========================
+[2016-04-05 17:39:09.49](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:09.49](TX ==> [FIXTURE]):Close Prox Cap
+[2016-04-05 17:39:09.49](RX ==> [FIXTURE]):Close Prox Cap
+Close Prox Cap Pass
+@_@
+
+[2016-04-05 17:39:09.49](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:09.49](TX ==> [MOBILE]):sensor --sel prox --sample 32 --stats
+[2016-04-05 17:39:10.410](RX ==> [MOBILE]):sensor --sel prox --sample 32 --stats
+Capturing 32 samples from:
+prox @ 60.00 Hz
+
+Output format = abstime : relativetime : sample
+Waiting for capture to finish...
+prox:		 290s:462155us (+00s:000000us) = -52.822352, 927.738822, 6.662036, 99762.260042, 716.386738, 9987.622068
+prox:		 290s:473916us (+00s:011761us) = -53.113614, 930.380591, 6.687175, 100046.336670, 719.090084, 9987.622068
+prox:		 290s:485675us (+00s:011759us) = -53.455884, 929.118366, 6.586616, 99910.606164, 708.276700, 9987.622068
+prox:		 290s:497431us (+00s:011756us) = -54.791922, 930.123956, 6.486057, 100018.740011, 697.463315, 9987.622068
+prox:		 290s:509187us (+00s:011756us) = -54.907123, 934.173552, 6.347789, 100454.204026, 682.594911, 9987.622068
+prox:		 290s:520941us (+00s:011754us) = -54.823222, 934.104418, 6.498627, 100446.769824, 698.814988, 9987.622068
+prox:		 290s:532699us (+00s:011758us) = -54.353145, 933.192054, 6.888294, 100348.660885, 740.716854, 9987.622068
+prox:		 290s:544451us (+00s:011752us) = -54.011311, 933.724179, 6.385498, 100405.881713, 686.649930, 9987.622068
+prox:		 290s:556202us (+00s:011751us) = -54.673389, 933.608955, 6.410638, 100393.491376, 689.353276, 9987.622068
+prox:		 290s:567952us (+00s:011750us) = -56.704544, 934.742339, 6.284939, 100515.367233, 675.836545, 9987.622068
+prox:		 290s:579700us (+00s:011748us) = -54.224613, 935.776212, 6.360359, 100626.542345, 683.946584, 9987.622068
+prox:		 290s:591450us (+00s:011750us) = -54.825685, 935.963713, 6.473488, 100646.704802, 696.111642, 9987.622068
+prox:		 290s:603199us (+00s:011749us) = -55.442118, 935.268179, 6.448348, 100571.912224, 693.408296, 9987.622068
+prox:		 290s:614946us (+00s:011747us) = -54.213021, 935.128863, 6.825444, 100556.931181, 733.958488, 9987.622068
+prox:		 290s:626696us (+00s:011750us) = -54.211282, 934.005954, 6.347789, 100436.181718, 682.594911, 9987.622068
+prox:		 290s:638445us (+00s:011749us) = -53.672084, 933.950437, 6.473488, 100430.211828, 696.111642, 9987.622068
+prox:		 290s:650191us (+00s:011746us) = -55.161144, 933.559723, 6.423208, 100388.197323, 690.704949, 9987.622068
+prox:		 290s:661940us (+00s:011749us) = -55.674113, 932.695544, 6.737455, 100295.269798, 724.496777, 9987.622068
+prox:		 290s:673687us (+00s:011747us) = -55.797139, 931.794703, 6.435778, 100198.399893, 692.056622, 9987.622068
+prox:		 290s:685434us (+00s:011747us) = -55.419657, 932.533183, 6.284939, 100277.810687, 675.836545, 9987.622068
+prox:		 290s:697182us (+00s:011748us) = -56.535003, 931.769563, 6.410638, 100195.696547, 689.353276, 9987.622068
+prox:		 290s:708926us (+00s:011744us) = -55.359376, 927.731489, 6.913433, 99761.471566, 743.420200, 9987.622068
+prox:		 290s:720672us (+00s:011746us) = -54.534133, 927.004531, 6.636896, 99683.299806, 713.683392, 9987.622068
+prox:		 290s:732417us (+00s:011745us) = -56.524280, 926.935397, 6.812874, 99675.865604, 732.606815, 9987.622068
+prox:		 290s:744161us (+00s:011744us) = -56.962043, 924.646631, 6.536337, 99429.748462, 702.870007, 9987.622068
+prox:		 290s:755911us (+00s:011750us) = -55.118252, 924.238110, 6.636896, 99385.819086, 713.683392, 9987.622068
+prox:		 290s:767657us (+00s:011746us) = -53.339089, 925.709833, 6.574047, 99544.077477, 706.925026, 9987.622068
+prox:		 290s:779403us (+00s:011746us) = -52.445740, 924.499983, 6.900863, 99413.978942, 742.068527, 9987.622068
+prox:		 290s:791148us (+00s:011745us) = -56.502109, 924.888601, 6.712315, 99455.768169, 721.793430, 9987.622068
+prox:		 290s:802892us (+00s:011744us) = -53.703384, 925.419679, 6.611756, 99512.876357, 710.980046, 9987.622068
+prox:		 290s:814635us (+00s:011743us) = -53.100428, 926.060743, 6.850584, 99581.811684, 736.661834, 9987.622068
+prox:		 290s:826378us (+00s:011743us) = -54.749030, 925.226941, 6.662036, 99492.150703, 716.386738, 9987.622068
+
+
+Stats:
+
+prox:
+	# of samples captured: 32
+	# of bad samples (corrupted/lost): 0
+	calculated odr: 85.115558Hz
+	average: rawrange = -54.724070
+	average: signalrateperspad = 930.491101, ambientrateperspad = 6.572083
+	average: totalsignalrate = 100058.220129, totalambientrate = 706.713828
+	average: integrationtime = 9987.622068
+	std-dev: rawrange = 1.167860
+	std-dev: signalrateperspad = 3.948696, ambientrateperspad = 0.185222
+	std-dev: totalsignalrate = 424.613976, totalambientrate = 19.917435
+	std-dev: integrationtime = 0.000000
+	rms: rawrange = 54.736530
+	rms: signalrateperspad = 930.499480, ambientrateperspad = 6.574692
+	rms: totalsignalrate = 100059.121086, totalambientrate = 706.994440
+	rms: integrationtime = 9987.622068
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:PROX_QT_TARGET_RAW_DIST_AVE, [-70,0]
+=========================== START TEST PROX_QT_TARGET_RAW_DIST_STD (Item28) ===========================
+Item Name:PROX_QT_TARGET_RAW_DIST_STD, [0.01,3]
+============================== START TEST PROX_QT_TARGET_SIG_AVE (Item29) ==============================
+Item Name:PROX_QT_TARGET_SIG_AVE, [500,1200]
+============================== START TEST PROX_QT_TARGET_SIG_STD (Item30) ==============================
+Item Name:PROX_QT_TARGET_SIG_STD, [0.01,15]
+============================== START TEST PROX_QT_TARGET_AMB_AVE (Item31) ==============================
+Item Name:PROX_QT_TARGET_AMB_AVE, [3,9]
+============================== START TEST PROX_QT_TARGET_AMB_STD (Item32) ==============================
+Item Name:PROX_QT_TARGET_AMB_STD, [0.01,0.5]
+=============================== START TEST X582 POWERED STATUS (Item33) ===============================
+[2016-04-05 17:39:10.410](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:10.410](TX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 0
+[2016-04-05 17:39:10.410](RX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 0
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:10.410](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:10.410](TX ==> [MOBILE]):touch --sel mesa --off
+[2016-04-05 17:39:10.410](RX ==> [MOBILE]):touch --sel mesa --off
+Setting active Touch controller to "mesa"
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:10.410](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:10.410](TX ==> [MOBILE]):wait 10
+[2016-04-05 17:39:10.410](RX ==> [MOBILE]):wait 10
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:10.410](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:10.410](TX ==> [MOBILE]):touch --on
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):touch --on
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 1
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 1
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):touch -p
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):touch -p
+type: mesa
+powered: yes
+serial-number: 0097B1110001C724001DAA462517B1E9
+firmware-loaded: no
+is-provisioned: no
+sensor-status: 0x0
+provisioning: 0x35
+gpio1: 0x0
+indicator: 0x0
+addtData: 0x3352
+module-sn: ?
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):touch --load_firmware
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):touch --load_firmware
+Using FW File: nandfs:\AppleInternal\Diags\Mesa\D10\MesaFwA0.bin
+loaded patch revision: 0x4A
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):touch -p powered
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):touch -p powered
+powered: yes
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:X582 Powered Status, <yes>
+============================= START TEST X582 MODULE SN FROM DIAG (Item34) =============================
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):touch -p module-sn
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):touch -p module-sn
+module-sn: F58611600TGH24G3E1
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:X582 Module SN from diag, {NA}
+========================= START TEST COMPARE X582 MODULE SN WITH SFC (Item35) =========================
+Item Name:Compare X582 Module SN with SFC, {NA}
+=============================== START TEST BURN X582 MODULE SN (Item36) ===============================
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):syscfg add NvSn F58611600TGH24G3E1
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):syscfg add NvSn F58611600TGH24G3E1
+Finish!
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):syscfg print NvSn
+[2016-04-05 17:39:11.411](RX ==> [MOBILE]):syscfg print NvSn
+F58611600TGH24G3E1
+[001D38CC:3020213A] :-) 
+
+Item Name:Burn X582 Module SN, {NA}
+================================ START TEST X582 UNDETECT TEST (Item37) ================================
+[2016-04-05 17:39:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:11.411](TX ==> [MOBILE]):touch --test auto --run
+[2016-04-05 17:39:12.412](RX ==> [MOBILE]):touch --test auto --run
+After set param 00 00 00
+After set param 11 00 00
+
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:12.412](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:12.412](TX ==> [MOBILE]):touch --test finger_det --run --options "--duration 1"
+[2016-04-05 17:39:13.413](RX ==> [MOBILE]):touch --test finger_det --run --options "--duration 1"
+After set param 00 00 00
+After set param 11 00 00
+DATA: finger-detected="no"
+
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:X582 Undetect Test, <no>
+================================= START TEST X582 DETECT TEST (Item38) =================================
+[2016-04-05 17:39:13.413](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:13.413](TX ==> [MOBILE]):touch --test get_status --run
+[2016-04-05 17:39:13.413](RX ==> [MOBILE]):touch --test get_status --run
+DATA: sensor-status="0x11"
+DATA: provisioning="0x1"
+DATA: gpio1="1"
+DATA: indicator="0x4"
+DATA: addtData="0x140431"
+
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:13.413](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:13.413](TX ==> [MOBILE]):touch --test finger_det --run --options "--exit_on_det"
+[2016-04-05 17:39:14.414](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:14.414](TX ==> [FIXTURE]):Open Menu
+[2016-04-05 17:39:14.414](RX ==> [FIXTURE]):Open Menu
+Open Menu Pass
+@_@
+
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):touch --test finger_det --run --options "--exit_on_det"
+After set param 00 00 00
+After set param 11 00 00
+DATA: finger-detected="yes"
+
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):touch --test get_status --run
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):touch --test get_status --run
+DATA: sensor-status="0x13"
+DATA: provisioning="0x0"
+DATA: gpio1="1"
+DATA: indicator="0x6"
+DATA: addtData="0x0"
+
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):sensor --sel turtle --init
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):sensor --sel turtle --init
+Turning off power to 'turtle' sensor...
+Turning on power to 'turtle' sensor...
+Resetting 'turtle' sensor...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):sensor --sel turtle --sample 1
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):sensor --sel turtle --sample 1
+Capturing 1 samples from:
+turtle @ 325.52 Hz
+
+Output format = abstime : relativetime : sample
+Waiting for capture to finish...
+turtle:	 295s:251194us (+00s:000000us) = 48241
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:14.414](TX ==> [FIXTURE]):Close Menu
+[2016-04-05 17:39:14.414](RX ==> [FIXTURE]):Close Menu
+Close Menu Pass
+@_@
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):touch --test get_status --run
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):touch --test get_status --run
+DATA: sensor-status="0x7"
+DATA: provisioning="0x0"
+DATA: gpio1="1"
+DATA: indicator="0x8E"
+DATA: addtData="0x7200"
+
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):sensor --sel turtle --sample 1
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):sensor --sel turtle --sample 1
+Capturing 1 samples from:
+turtle @ 325.52 Hz
+
+Output format = abstime : relativetime : sample
+Waiting for capture to finish...
+turtle:	 295s:474236us (+00s:000000us) = 47506
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 0
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 0
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):touch --sel mesa --off
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):touch --sel mesa --off
+Setting active Touch controller to "mesa"
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):wait 10
+[2016-04-05 17:39:14.414](RX ==> [MOBILE]):wait 10
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:14.414](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:14.414](TX ==> [MOBILE]):touch --on
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):touch --on
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 1
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 1
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:X582 Detect Test, <yes>
+================================ START TEST SENSOR-STATUS_INIT (Item39) ================================
+Item Name:Sensor-Status_Init, {NA}
+================================== START TEST INDICATOR_INIT (Item40) ==================================
+Item Name:Indicator_Init, {NA}
+=============================== START TEST SENSOR-STATUS_DETECT (Item41) ===============================
+Item Name:Sensor-Status_Detect, {NA}
+================================= START TEST INDICATOR_DETECT (Item42) =================================
+Item Name:Indicator_Detect, {NA}
+============================== START TEST SENSOR-STATUS_UNDETECT (Item43) ==============================
+Item Name:Sensor-Status_Undetect, {NA}
+================================ START TEST INDICATOR_UNDETECT (Item44) ================================
+Item Name:Indicator_Undetect, {NA}
+================================= START TEST TURTLE_READ_INIT (Item45) =================================
+Item Name:Turtle_Read_Init, {NA}
+================================ START TEST TURTLE_READ_DETECT (Item46) ================================
+Item Name:Turtle_Read_Detect, {NA}
+================================ START TEST TURTLE_READ_DELTA (Item47) ================================
+Item Name:Turtle_Read_Delta, {NA}
+========================= START TEST 3K TONE SPK TO MIC1_FREQUENCY(L) (Item48) =========================
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):audio --reset
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):audio --reset
+Resetting arc...
+Speaker already powered off.
+Resetting audmux...
+Resetting baseband...
+Resetting bluetooth...
+Resetting botspeaker...
+Resetting codec...
+Resetting fpga...
+Resetting mikeybus...
+Resetting socmca...
+Resetting topspeaker...
+Speaker already powered off.
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):audio --turnoff topspeaker
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):audio --turnoff topspeaker
+Turning-off power to topspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):audio --turnoff arc
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):audio --turnoff arc
+Turning-off power to arc...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):routeaudio --route --block codec --in ain1 --out xsp[0]
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):routeaudio --route --block codec --in ain1 --out xsp[0]
+Routing from codec.ain1[l] --> codec.xsp[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):routeaudio --route --block codec --in ain2 --out xsp[1]
+[2016-04-05 17:39:15.415](RX ==> [MOBILE]):routeaudio --route --block codec --in ain2 --out xsp[1]
+Routing from codec.ain2[l] --> codec.xsp[r]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:15.415](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:15.415](TX ==> [MOBILE]):routeaudio --route --block botspeaker --in spk-i2s --out spk-out
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):routeaudio --route --block botspeaker --in spk-i2s --out spk-out
+Routing from botspeaker.spk-i2s[1:0] --> botspeaker.spk-out[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):setvol -b botspeaker -n spk-vol -v -9.5
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):setvol -b botspeaker -n spk-vol -v -9.5
+Set 'spk-vol' volume to -9.5 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):audioparam --set --block botspeaker --param amp-gain --value 16
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):audioparam --set --block botspeaker --param amp-gain --value 16
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):audioparam --set --block botspeaker --param enable-mon --value true
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):audioparam --set --block botspeaker --param enable-mon --value true
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):loopaudio -b socmca --txport ap-mca2 --rxport ap-mca4 --len 400 --freq 3000
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):loopaudio -b socmca --txport ap-mca2 --rxport ap-mca4 --len 400 --freq 3000
+Configuring 'socmca' to play/record 48Khz, 16-bit, 2 channels of packed audio data for 400mS...
+Requesting new tx buffer...
+Generating tone data into 'looptx0'...
+Requesting new rx buffer...
+Using rx buffer 'looprx0'...
+Playing/Receiving audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):processaudio -p fft -i looprx0
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):processaudio -p fft -i looprx0
+Number of samples does not equal power of 2 - truncating to 16384 samples...
+Channel 0:
+Using 16384 bins, Peak Bin=1024; Peak Magnitude=0.029761 FS; Frequency: 3000.000000 +/- 1.464843 Hz
+DC Magnitude=0.000006 FS
+Signal Bins=3
+SINAD=11.942747 dBFS
+Peak Power: -30.526793 dBFS
+Signal Power: -30.684991 dBFS
+Noise Power: -42.627739 dBFS
+Average Noise PSD: -77.957192 dBFS
+Noise Margin: 47.430399 dBFS
+THD+N: -20.353081 dB
+Channel 1:
+Using 16384 bins, Peak Bin=1024; Peak Magnitude=0.266928 FS; Frequency: 3000.000000 +/- 1.464843 Hz
+DC Magnitude=0.000095 FS
+Signal Bins=3
+SINAD=13.294213 dBFS
+Peak Power: -11.472090 dBFS
+Signal Power: -11.617283 dBFS
+Noise Power: -24.911496 dBFS
+Average Noise PSD: -60.240950 dBFS
+Noise Margin: 48.768860 dBFS
+THD+N: -34.104296 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:3K Tone SPK to MIC1_Frequency(L), [2996,3004]
+========================= START TEST 3K TONE SPK TO MIC1_MAX_POWER(L) (Item49) =========================
+Item Name:3K Tone SPK to MIC1_Max_Power(L), {NA}
+========================= START TEST 3K TONE SPK TO MIC4_FREQUENCY(R) (Item50) =========================
+Item Name:3K Tone SPK to MIC4_Frequency(R), [2996,3004]
+========================= START TEST 3K TONE SPK TO MIC4_MAX_POWER(R) (Item51) =========================
+Item Name:3K Tone SPK to MIC4_Max_Power(R), {NA}
+=========================== START TEST 1K TONE TO MIC2_FREQUENCY(L) (Item52) ===========================
+[2016-04-05 17:39:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:16.416](TX ==> [MOBILE]):audio --turnoff botspeaker
+[2016-04-05 17:39:16.416](RX ==> [MOBILE]):audio --turnoff botspeaker
+Turning-off power to botspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:16.416](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:16.416](TX ==> [FIXTURE]):Open Speaker2 1000
+[2016-04-05 17:39:17.417](RX ==> [FIXTURE]):Open Speaker2 1000
+Open Speaker2 1000 Pass
+@_@
+
+[2016-04-05 17:39:17.417](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:17.417](TX ==> [MOBILE]):routeaudio --route --block codec --in ain3 --out xsp[1:0]
+[2016-04-05 17:39:17.417](RX ==> [MOBILE]):routeaudio --route --block codec --in ain3 --out xsp[1:0]
+Routing from codec.ain3[l] --> codec.xsp[1:0]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:17.417](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:17.417](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:17.417](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:17.417](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:17.417](TX ==> [MOBILE]):recordaudio -b socmca -p ap-mca4 -r 48000 -l 400
+[2016-04-05 17:39:17.417](RX ==> [MOBILE]):recordaudio -b socmca -p ap-mca4 -r 48000 -l 400
+DataFormat = 00000002
+Configuring 'socmca' to record 48Khz, 16-bit, 2 channels of audio data for 400mS...
+Requesting new buffer...
+Using buffer 'record0'
+Recording audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:17.417](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:17.417](TX ==> [FIXTURE]):Close Speaker2
+[2016-04-05 17:39:17.417](RX ==> [FIXTURE]):Close Speaker2
+Close Speaker2 Pass
+@_@
+
+[2016-04-05 17:39:17.417](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:17.417](TX ==> [MOBILE]):processaudio -p fft -i record0
+[2016-04-05 17:39:17.417](RX ==> [MOBILE]):processaudio -p fft -i record0
+Number of samples does not equal power of 2 - truncating to 16384 samples...
+Channel 0:
+Using 16384 bins, Peak Bin= 341; Peak Magnitude=0.380424 FS; Frequency:  999.023437 +/- 1.464843 Hz
+DC Magnitude=0.001275 FS
+Signal Bins=3
+SINAD=11.219171 dBFS
+Peak Power: -8.394625 dBFS
+Signal Power: -8.311971 dBFS
+Noise Power: -19.531143 dBFS
+Average Noise PSD: -54.860597 dBFS
+Noise Margin: 46.465971 dBFS
+THD+N: -19.759491 dB
+Channel 1:
+Using 16384 bins, Peak Bin= 341; Peak Magnitude=0.380424 FS; Frequency:  999.023437 +/- 1.464843 Hz
+DC Magnitude=0.001275 FS
+Signal Bins=3
+SINAD=11.219171 dBFS
+Peak Power: -8.394625 dBFS
+Signal Power: -8.311971 dBFS
+Noise Power: -19.531143 dBFS
+Average Noise PSD: -54.860597 dBFS
+Noise Margin: 46.465972 dBFS
+THD+N: -19.759491 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:1K Tone to MIC2_Frequency(L), [996,1004]
+=========================== START TEST 1K TONE TO MIC2_MAX_POWER(L) (Item53) ===========================
+Item Name:1K Tone to MIC2_Max_Power(L), {NA}
+=========================== START TEST 1K TONE TO MIC2_FREQUENCY(R) (Item54) ===========================
+Item Name:1K Tone to MIC2_Frequency(R), [996,1004]
+=========================== START TEST 1K TONE TO MIC2_MAX_POWER(R) (Item55) ===========================
+Item Name:1K Tone to MIC2_Max_Power(R), {NA}
+====================== START TEST 1K TONE TO LOW_POWER_MIC2_FREQUENCY(L) (Item56) ======================
+[2016-04-05 17:39:17.417](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:17.417](TX ==> [MOBILE]):audio --reset
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):audio --reset
+Resetting arc...
+Speaker already powered off.
+Resetting audmux...
+Resetting baseband...
+Resetting bluetooth...
+Resetting botspeaker...
+Speaker already powered off.
+Resetting codec...
+Resetting fpga...
+Resetting mikeybus...
+Resetting socmca...
+Resetting topspeaker...
+Speaker already powered off.
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:18.418](TX ==> [FIXTURE]):Open Speaker2 1000
+[2016-04-05 17:39:18.418](RX ==> [FIXTURE]):Open Speaker2 1000
+Open Speaker2 1000 Pass
+@_@
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:18.418](TX ==> [MOBILE]):audioparam -s -n clocking-mode -b socmca -p ap-mca4 -v slave
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):audioparam -s -n clocking-mode -b socmca -p ap-mca4 -v slave
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:18.418](TX ==> [MOBILE]):audioparam -s -n clocking-mode -b audmux -p ext-mca4 -v slave
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):audioparam -s -n clocking-mode -b audmux -p ext-mca4 -v slave
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:18.418](TX ==> [MOBILE]):routeaudio -b codec -i lp_ain3 -o xsp[0] -r
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):routeaudio -b codec -i lp_ain3 -o xsp[0] -r
+Routing from codec.lp_ain3[l] --> codec.xsp[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:18.418](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:18.418](TX ==> [MOBILE]):recordaudio -b socmca -p ap-mca4 -d 16 --len 400 -r 16000
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):recordaudio -b socmca -p ap-mca4 -d 16 --len 400 -r 16000
+DataFormat = 00000002
+Configuring 'socmca' to record 16Khz, 16-bit, 2 channels of audio data for 400mS...
+Requesting new buffer...
+Using buffer 'record0'
+Recording audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:18.418](TX ==> [FIXTURE]):Close Speaker2
+[2016-04-05 17:39:18.418](RX ==> [FIXTURE]):Close Speaker2
+Close Speaker2 Pass
+@_@
+
+[2016-04-05 17:39:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:18.418](TX ==> [MOBILE]):processaudio -p fft -i record0
+[2016-04-05 17:39:18.418](RX ==> [MOBILE]):processaudio -p fft -i record0
+Number of samples does not equal power of 2 - truncating to 4096 samples...
+Channel 0:
+Using 4096 bins, Peak Bin= 255; Peak Magnitude=0.440206 FS; Frequency:  996.093750 +/- 1.953125 Hz
+DC Magnitude=0.009993 FS
+Signal Bins=3
+SINAD=9.087434 dBFS
+Peak Power: -7.126877 dBFS
+Signal Power: -7.255057 dBFS
+Noise Power: -16.342492 dBFS
+Average Noise PSD: -46.439125 dBFS
+Noise Margin: 39.312248 dBFS
+THD+N: -11.659624 dB
+Channel 1:
+Using 4096 bins, Peak Bin=   0; Peak Magnitude=0.000000 FS; Frequency:    0.000000 +/- 1.953125 Hz
+[0;35mWARNING: Noise Power can not be zero for SINAD calculation (divide by zero), setting SINAD to 0
+[0mDC Magnitude=0.000000 FS
+Signal Bins=3
+SINAD=-inf dBFS
+Peak Power: -inf dBFS
+Signal Power: -inf dBFS
+Noise Power: -inf dBFS
+Average Noise PSD: -inf dBFS
+Noise Margin: NaN dBFS
+THD+N: 0.000000 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:1K Tone to Low_Power_MIC2_Frequency(L), [950,1050]
+====================== START TEST 1K TONE TO LOW_POWER_MIC2_MAX_POWER(L) (Item57) ======================
+Item Name:1K Tone to Low_Power_MIC2_Max_Power(L), {NA}
+===================== START TEST 400 TONE TO LOW_POWER_MIC2_FREQUENCY(L) (Item58) =====================
+[2016-04-05 17:39:19.419](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:19.419](TX ==> [FIXTURE]):Open Speaker2 400
+[2016-04-05 17:39:19.419](RX ==> [FIXTURE]):Open Speaker2 400
+Open Speaker2 400 Pass
+@_@
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:19.419](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):recordaudio -b socmca -p ap-mca4 -d 16 --len 400 -r 16000
+[2016-04-05 17:39:19.419](RX ==> [MOBILE]):recordaudio -b socmca -p ap-mca4 -d 16 --len 400 -r 16000
+DataFormat = 00000002
+Configuring 'socmca' to record 16Khz, 16-bit, 2 channels of audio data for 400mS...
+Requesting new buffer...
+Using buffer 'record0'
+Recording audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:19.419](TX ==> [FIXTURE]):Close Speaker2
+[2016-04-05 17:39:19.419](RX ==> [FIXTURE]):Close Speaker2
+Close Speaker2 Pass
+@_@
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):processaudio -p fft -i record0
+[2016-04-05 17:39:19.419](RX ==> [MOBILE]):processaudio -p fft -i record0
+Number of samples does not equal power of 2 - truncating to 4096 samples...
+Channel 0:
+Using 4096 bins, Peak Bin= 102; Peak Magnitude=0.082425 FS; Frequency:  398.437500 +/- 1.953125 Hz
+DC Magnitude=0.000002 FS
+Signal Bins=3
+SINAD=7.592801 dBFS
+Peak Power: -21.678749 dBFS
+Signal Power: -21.834550 dBFS
+Noise Power: -29.427351 dBFS
+Average Noise PSD: -59.523984 dBFS
+Noise Margin: 37.845235 dBFS
+THD+N: -9.836864 dB
+Channel 1:
+Using 4096 bins, Peak Bin=   0; Peak Magnitude=0.000000 FS; Frequency:    0.000000 +/- 1.953125 Hz
+[0;35mWARNING: Noise Power can not be zero for SINAD calculation (divide by zero), setting SINAD to 0
+[0mDC Magnitude=0.000000 FS
+Signal Bins=3
+SINAD=-inf dBFS
+Peak Power: -inf dBFS
+Signal Power: -inf dBFS
+Noise Power: -inf dBFS
+Average Noise PSD: -inf dBFS
+Noise Margin: NaN dBFS
+THD+N: 0.000000 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:400 Tone to Low_Power_MIC2_Frequency(L), [380,420]
+===================== START TEST 400 TONE TO LOW_POWER_MIC2_MAX_POWER(L) (Item59) =====================
+Item Name:400 Tone to Low_Power_MIC2_Max_Power(L), {NA}
+===================== START TEST 3K TONE TOPSPEAKER TO MIC3_FREQUENCY(L) (Item60) =====================
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):audio --reset
+[2016-04-05 17:39:19.419](RX ==> [MOBILE]):audio --reset
+Resetting arc...
+Resetting audmux...
+Resetting baseband...
+Resetting bluetooth...
+Resetting botspeaker...
+Resetting codec...
+Resetting fpga...
+Resetting mikeybus...
+Resetting socmca...
+Resetting topspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):audio --turnoff botspeaker
+[2016-04-05 17:39:19.419](RX ==> [MOBILE]):audio --turnoff botspeaker
+Turning-off power to botspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):audio --turnoff arc
+[2016-04-05 17:39:19.419](RX ==> [MOBILE]):audio --turnoff arc
+Turning-off power to arc...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:19.419](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:19.419](TX ==> [MOBILE]):routeaudio --route --block codec --in xsp[0] --out pdm
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):routeaudio --route --block codec --in xsp[0] --out pdm
+Routing from codec.xsp[l] --> codec.pdm[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):routeaudio --route --block codec --in ain4 --out xsp[1:0]
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):routeaudio --route --block codec --in ain4 --out xsp[1:0]
+Routing from codec.ain4[l] --> codec.xsp[1:0]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):routeaudio --route --block topspeaker --in spk-pdm --out spk-out
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):routeaudio --route --block topspeaker --in spk-pdm --out spk-out
+Routing from topspeaker.spk-pdm[l] --> topspeaker.spk-out[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):audioparam --set --block topspeaker --param enable-mon --value true
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):audioparam --set --block topspeaker --param enable-mon --value true
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):setvol -b codec -n mixerA-channel1 -v -6
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):setvol -b codec -n mixerA-channel1 -v -6
+Set 'mixerA-channel1' volume to -6 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):i2c -v 2 0x40 0x17 0x0F
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):i2c -v 2 0x40 0x17 0x0F
+Set  bytes:	0x0F 	Writing 1 bytes
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca4 -d 24 --rate 48000 --channels 2 -l 400 --freq 3000
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca4 -d 24 --rate 48000 --channels 2 -l 400 --freq 3000
+Configuring 'socmca' to play/record 48Khz, 24-bit, 2 channels of padded audio data for 400mS...
+Requesting new tx buffer...
+Generating tone data into 'looptx0'...
+Requesting new rx buffer...
+Using rx buffer 'looprx0'...
+Playing/Receiving audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:20.420](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:20.420](TX ==> [MOBILE]):processaudio -p fft -i looprx0
+[2016-04-05 17:39:20.420](RX ==> [MOBILE]):processaudio -p fft -i looprx0
+Number of samples does not equal power of 2 - truncating to 16384 samples...
+Channel 0:
+Using 16384 bins, Peak Bin=1024; Peak Magnitude=0.010785 FS; Frequency: 3000.000000 +/- 1.464843 Hz
+DC Magnitude=0.000025 FS
+Signal Bins=3
+SINAD=13.255715 dBFS
+Peak Power: -39.343390 dBFS
+Signal Power: -39.495221 dBFS
+Noise Power: -52.750937 dBFS
+Average Noise PSD: -88.080391 dBFS
+Noise Margin: 48.737001 dBFS
+THD+N: -21.616322 dB
+Channel 1:
+Using 16384 bins, Peak Bin=1024; Peak Magnitude=0.010785 FS; Frequency: 3000.000000 +/- 1.464843 Hz
+DC Magnitude=0.000025 FS
+Signal Bins=3
+SINAD=13.255715 dBFS
+Peak Power: -39.343390 dBFS
+Signal Power: -39.495221 dBFS
+Noise Power: -52.750937 dBFS
+Average Noise PSD: -88.080391 dBFS
+Noise Margin: 48.737001 dBFS
+THD+N: -21.616322 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:3K Tone TopSpeaker to MIC3_Frequency(L), [2996,3004]
+===================== START TEST 3K TONE TOPSPEAKER TO MIC3_MAX_POWER(L) (Item61) =====================
+Item Name:3K Tone TopSpeaker to MIC3_Max_Power(L), {NA}
+===================== START TEST 3K TONE TOPSPEAKER TO MIC3_FREQUENCY(R) (Item62) =====================
+Item Name:3K Tone TopSpeaker to MIC3_Frequency(R), [2996,3004]
+===================== START TEST 3K TONE TOPSPEAKER TO MIC3_MAX_POWER(R) (Item63) =====================
+Item Name:3K Tone TopSpeaker to MIC3_Max_Power(R), {NA}
+====================== START TEST 3K TONE TOPSPK TO LOW_POWER_MIC3_FR(R) (Item64) ======================
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audio --reset
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audio --reset
+Resetting arc...
+Speaker already powered off.
+Resetting audmux...
+Resetting baseband...
+Resetting bluetooth...
+Resetting botspeaker...
+Speaker already powered off.
+Resetting codec...
+Resetting fpga...
+Resetting mikeybus...
+Resetting socmca...
+Resetting topspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audio --turnoff botspeaker
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audio --turnoff botspeaker
+Turning-off power to botspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audio --turnoff arc
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audio --turnoff arc
+Turning-off power to arc...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioparam -b socmca -s -n clocking-mode -p ap-mca2 -v slave
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioparam -b socmca -s -n clocking-mode -p ap-mca2 -v slave
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioparam -b audmux -s -n clocking-mode -p ext-mca2 -v slave
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioparam -b audmux -s -n clocking-mode -p ext-mca2 -v slave
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):routeaudio --route --block topspeaker --in spk-i2s --out spk-out
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):routeaudio --route --block topspeaker --in spk-i2s --out spk-out
+Routing from topspeaker.spk-i2s[1:0] --> topspeaker.spk-out[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):setvol -b topspeaker -n spk-vol -v -12
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):setvol -b topspeaker -n spk-vol -v -12
+Set 'spk-vol' volume to -12 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioparam -s -n clocking-mode -b socmca -p ap-mca4 -v slave
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioparam -s -n clocking-mode -b socmca -p ap-mca4 -v slave
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioparam -s -n clocking-mode -b audmux -p ext-mca4 -v slave
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioparam -s -n clocking-mode -b audmux -p ext-mca4 -v slave
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):routeaudio -b codec -i lp_ain4 -o xsp[1] -r
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):routeaudio -b codec -i lp_ain4 -o xsp[1] -r
+Routing from codec.lp_ain4[l] --> codec.xsp[r]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -b codec -w -a 0x010000 -d 0x0f
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -b codec -w -a 0x010000 -d 0x0f
+
+codec:write
+	0x10000 = 0x0F
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -w -b codec -a 0x020001 -d 0x30
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -w -b codec -a 0x020001 -d 0x30
+
+codec:write
+	0x20001 = 0x30
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -w -b codec -a 0x020002 -d 0x7d
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -w -b codec -a 0x020002 -d 0x7d
+
+codec:write
+	0x20002 = 0x7D
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -w -b codec -a 0x020003 -d 0x2f
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -w -b codec -a 0x020003 -d 0x2f
+
+codec:write
+	0x20003 = 0x2F
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -w -b codec -a 0x020004 -d 0x5f
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -w -b codec -a 0x020004 -d 0x5f
+
+codec:write
+	0x20004 = 0x5F
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -b codec -w -a 0x330000 -d 0x09
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -b codec -w -a 0x330000 -d 0x09
+
+codec:write
+	0x330000 = 0x09
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -b codec -w -a 0x330008 -d 0x09
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -b codec -w -a 0x330008 -d 0x09
+
+codec:write
+	0x330008 = 0x09
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -b codec -w -a 0x000008 -d 0x0f
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -b codec -w -a 0x000008 -d 0x0f
+
+codec:write
+	0x08 = 0x0F
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -b codec -w -a 0x150000 -d 0x04
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -b codec -w -a 0x150000 -d 0x04
+
+codec:write
+	0x150000 = 0x04
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):audioreg -b codec -w -a 0x010000 -d 0x0c
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):audioreg -b codec -w -a 0x010000 -d 0x0c
+
+codec:write
+	0x10000 = 0x0C
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:21.421](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:21.421](TX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca2 --rate 48000 --channels 2 -l 400 --freq 3000
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca2 --rate 48000 --channels 2 -l 400 --freq 3000
+Configuring 'socmca' to play/record 48Khz, 16-bit, 2 channels of packed audio data for 400mS...
+Requesting new tx buffer...
+Generating tone data into 'looptx0'...
+Requesting new rx buffer...
+Using rx buffer 'looprx0'...
+Playing/Receiving audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):processaudio -p fft -i looprx0
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):processaudio -p fft -i looprx0
+Number of samples does not equal power of 2 - truncating to 16384 samples...
+Channel 0:
+Using 16384 bins, Peak Bin=   0; Peak Magnitude=0.000000 FS; Frequency:    0.000000 +/- 1.464843 Hz
+[0;35mWARNING: Noise Power can not be zero for SINAD calculation (divide by zero), setting SINAD to 0
+[0mDC Magnitude=0.000000 FS
+Signal Bins=3
+SINAD=-inf dBFS
+Peak Power: -inf dBFS
+Signal Power: -inf dBFS
+Noise Power: -inf dBFS
+Average Noise PSD: -inf dBFS
+Noise Margin: NaN dBFS
+THD+N: 0.000000 dB
+Channel 1:
+Using 16384 bins, Peak Bin=1020; Peak Magnitude=0.073780 FS; Frequency: 2988.281250 +/- 1.464843 Hz
+DC Magnitude=0.000000 FS
+Signal Bins=3
+SINAD=10.443135 dBFS
+Peak Power: -22.641222 dBFS
+Signal Power: -22.391489 dBFS
+Noise Power: -32.834624 dBFS
+Average Noise PSD: -68.164078 dBFS
+Noise Margin: 45.522856 dBFS
+THD+N: -26.607860 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:3K Tone TopSpk to Low_Power_MIC3_FR(R), [2850,3150]
+==================== START TEST 3K TONE TOPSPK TO LOW_POWER_MIC3_MAX_PR(R) (Item65) ====================
+Item Name:3K Tone TopSpk to Low_Power_MIC3_Max_PR(R), {NA}
+========================= START TEST 3K TONE NO HAC TO MIC4_FREQUENCY (Item66) =========================
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):audio --reset
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):audio --reset
+Resetting arc...
+Speaker already powered off.
+Resetting audmux...
+Resetting baseband...
+Resetting bluetooth...
+Resetting botspeaker...
+Speaker already powered off.
+Resetting codec...
+Resetting fpga...
+Resetting mikeybus...
+Resetting socmca...
+Resetting topspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):audio --turnoff botspeaker
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):audio --turnoff botspeaker
+Turning-off power to botspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):audio --turnoff arc
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):audio --turnoff arc
+Turning-off power to arc...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):routeaudio --route --block codec --in xsp[0] --out pdm 
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):routeaudio --route --block codec --in xsp[0] --out pdm 
+Routing from codec.xsp[l] --> codec.pdm[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):routeaudio --route --block codec --in ain2 --out xsp[1:0]
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):routeaudio --route --block codec --in ain2 --out xsp[1:0]
+Routing from codec.ain2[l] --> codec.xsp[1:0]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):routeaudio --route --block topspeaker --in spk-pdm --out spk-out 
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):routeaudio --route --block topspeaker --in spk-pdm --out spk-out 
+Routing from topspeaker.spk-pdm[l] --> topspeaker.spk-out[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):audioparam --set --block topspeaker --param enable-mon --value true
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):audioparam --set --block topspeaker --param enable-mon --value true
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):setvol -b codec -n mixerA-channel1 -v -6
+[2016-04-05 17:39:22.422](RX ==> [MOBILE]):setvol -b codec -n mixerA-channel1 -v -6
+Set 'mixerA-channel1' volume to -6 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:22.422](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:22.422](TX ==> [MOBILE]):i2c -v 2 0x40 0x17 0x0F
+[2016-04-05 17:39:23.423](RX ==> [MOBILE]):i2c -v 2 0x40 0x17 0x0F
+Set  bytes:	0x0F 	Writing 1 bytes
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:23.423](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:23.423](TX ==> [MOBILE]):processaudio --freebufs all 
+[2016-04-05 17:39:23.423](RX ==> [MOBILE]):processaudio --freebufs all 
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:23.423](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:23.423](TX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca4 -d 24 --rate 48000 --channels 1 -l 400 --freq 3000
+[2016-04-05 17:39:23.423](RX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca4 -d 24 --rate 48000 --channels 1 -l 400 --freq 3000
+Configuring 'socmca' to play/record 48Khz, 24-bit, 1 channels of padded audio data for 400mS...
+Requesting new tx buffer...
+Generating tone data into 'looptx0'...
+Requesting new rx buffer...
+Using rx buffer 'looprx0'...
+Playing/Receiving audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:23.423](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:23.423](TX ==> [MOBILE]):processaudio -p fft -i looprx0 -o "--minHz 2990 --maxHz 3010"
+[2016-04-05 17:39:23.423](RX ==> [MOBILE]):processaudio -p fft -i looprx0 -o "--minHz 2990 --maxHz 3010"
+Number of samples does not equal power of 2 - truncating to 16384 samples...
+Channel 0:
+Using 16384 bins, Peak Bin=1024; Peak Magnitude=0.000228 FS; Frequency: 3000.000000 +/- 1.464843 Hz
+DC Magnitude=0.000005 FS
+Signal Bins=3
+SINAD=11.937735 dBFS
+Peak Power: -72.829352 dBFS
+Signal Power: -72.905691 dBFS
+Noise Power: -84.843427 dBFS
+Average Noise PSD: -87.853727 dBFS
+Noise Margin: 15.024374 dBFS
+THD+N: -1.299911 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:3K Tone No HAC to MIC4_Frequency, [2990,3010]
+========================= START TEST 3K TONE NO HAC TO MIC4_PEAK MAG (Item67) =========================
+Item Name:3K Tone No HAC to MIC4_Peak Mag, [,0.005]
+========================== START TEST 3K TONE HAC TO MIC4_FREQUENCY (Item68) ==========================
+[2016-04-05 17:39:23.423](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:23.423](TX ==> [FIXTURE]):Close Cap
+[2016-04-05 17:39:24.424](RX ==> [FIXTURE]):Close Cap
+Close Cap Pass
+@_@
+
+[2016-04-05 17:39:24.424](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:24.424](TX ==> [FIXTURE]):Open HAC
+[2016-04-05 17:39:24.424](RX ==> [FIXTURE]):Open HAC
+Open HAC Pass
+@_@
+
+[2016-04-05 17:39:24.424](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:24.424](TX ==> [MOBILE]):processaudio --freebufs all 
+[2016-04-05 17:39:24.424](RX ==> [MOBILE]):processaudio --freebufs all 
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:24.424](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:24.424](TX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca4 -d 24 --rate 48000 --channels 1 -l 400 --freq 3000
+[2016-04-05 17:39:24.424](RX ==> [MOBILE]):loopaudio -b socmca -p ap-mca4 -x ap-mca4 -d 24 --rate 48000 --channels 1 -l 400 --freq 3000
+Configuring 'socmca' to play/record 48Khz, 24-bit, 1 channels of padded audio data for 400mS...
+Requesting new tx buffer...
+Generating tone data into 'looptx0'...
+Requesting new rx buffer...
+Using rx buffer 'looprx0'...
+Playing/Receiving audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:24.424](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:24.424](TX ==> [MOBILE]):processaudio -p fft -i looprx0
+[2016-04-05 17:39:25.425](RX ==> [MOBILE]):processaudio -p fft -i looprx0
+Number of samples does not equal power of 2 - truncating to 16384 samples...
+Channel 0:
+Using 16384 bins, Peak Bin=1024; Peak Magnitude=0.061434 FS; Frequency: 3000.000000 +/- 1.464843 Hz
+DC Magnitude=0.000006 FS
+Signal Bins=3
+SINAD=13.426952 dBFS
+Peak Power: -24.231742 dBFS
+Signal Power: -24.391212 dBFS
+Noise Power: -37.818165 dBFS
+Average Noise PSD: -73.147619 dBFS
+Noise Margin: 48.915876 dBFS
+THD+N: -25.414318 dB
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:3K Tone HAC to MIC4_Frequency, [2996,3004]
+=========================== START TEST 3K TONE HAC TO MIC4_PEAK MAG (Item69) ===========================
+[2016-04-05 17:39:25.425](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:25.425](TX ==> [FIXTURE]):Close HAC
+[2016-04-05 17:39:25.425](RX ==> [FIXTURE]):Close HAC
+Close HAC Pass
+@_@
+
+Item Name:3K Tone HAC to MIC4_Peak Mag, {NA}
+================================ START TEST 3K TONE HAC RATIO (Item70) ================================
+Item Name:3K Tone HAC Ratio, {NA}
+=================================== START TEST ALS ID CHECK (Item71) ===================================
+[2016-04-05 17:39:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:25.425](TX ==> [MOBILE]):sensor --sel als --init
+[2016-04-05 17:39:25.425](RX ==> [MOBILE]):sensor --sel als --init
+Turning off power to 'als' sensor...
+Turning on power to 'als' sensor...
+Resetting 'als' sensor...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:25.425](TX ==> [MOBILE]):sensor --sel als --get chip_id
+[2016-04-05 17:39:25.425](RX ==> [MOBILE]):sensor --sel als --get chip_id
+als:
+	chip_id = 0x9B
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:ALS ID check, <0x9B>
+=============================== START TEST CLEAR TEST NO LIGHT (Item72) ===============================
+[2016-04-05 17:39:25.425](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:25.425](TX ==> [FIXTURE]):Close Prox Cap
+[2016-04-05 17:39:25.425](RX ==> [FIXTURE]):Close Prox Cap
+Close Prox Cap Pass
+@_@
+
+[2016-04-05 17:39:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:25.425](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:39:25.425](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:25.425](TX ==> [MOBILE]):bl -o
+[2016-04-05 17:39:25.425](RX ==> [MOBILE]):bl -o
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:25.425](TX ==> [MOBILE]):sensor --sel als --init
+[2016-04-05 17:39:25.425](RX ==> [MOBILE]):sensor --sel als --init
+Turning off power to 'als' sensor...
+Turning on power to 'als' sensor...
+Resetting 'als' sensor...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:25.425](TX ==> [MOBILE]):sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream
+[2016-04-05 17:39:27.427](RX ==> [MOBILE]):sensor --sel als --set gain 64 integration_cycles 144 --sample 5 --stream
+Setting parameter 'gain' to 64 for 'als'
+Setting parameter 'integration_cycles' to 144 for 'als'
+Capturing 5 samples from:
+als @ 2.49 Hz
+
+Output format = abstime : relativetime : sample
+als:		 306s:726142us (+00s:000000us) = ir = 0x00000000, clear = 0x00000000
+als:		 307s:124146us (+00s:398004us) = ir = 0x00000000, clear = 0x00000000
+als:		 307s:522088us (+00s:397942us) = ir = 0x00000000, clear = 0x00000000
+als:		 307s:920090us (+00s:398002us) = ir = 0x00000000, clear = 0x00000000
+als:		 308s:318036us (+00s:397946us) = ir = 0x00000000, clear = 0x00000000
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:Clear Test No Light, [0,8]
+================================= START TEST IR TEST NO LIGHT (Item73) =================================
+Item Name:IR Test No Light, [0,8]
+=========================== START TEST CLEAR TEST WITH LIGHT(BLACK) (Item76) ===========================
+[2016-04-05 17:39:27.427](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:27.427](TX ==> [FIXTURE]):White Led On
+[2016-04-05 17:39:27.427](RX ==> [FIXTURE]):White Led On
+White Led On Pass
+@_@
+
+[2016-04-05 17:39:27.427](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:27.427](TX ==> [MOBILE]):sensor --sel als --set gain 140 integration_cycles 144 --sample 5 --stream
+[2016-04-05 17:39:29.429](RX ==> [MOBILE]):sensor --sel als --set gain 140 integration_cycles 144 --sample 5 --stream
+Setting parameter 'gain' to 140 for 'als'
+Setting parameter 'integration_cycles' to 144 for 'als'
+Capturing 5 samples from:
+als @ 2.49 Hz
+
+Output format = abstime : relativetime : sample
+als:		 308s:952655us (+00s:000000us) = ir = 0x0000030E, clear = 0x00002998
+als:		 309s:350669us (+00s:398014us) = ir = 0x0000030D, clear = 0x0000298E
+als:		 309s:748620us (+00s:397951us) = ir = 0x0000030D, clear = 0x00002987
+als:		 310s:146566us (+00s:397946us) = ir = 0x0000030D, clear = 0x00002985
+als:		 310s:544587us (+00s:398021us) = ir = 0x0000030D, clear = 0x00002984
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:29.429](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:29.429](TX ==> [FIXTURE]):White Led Off
+[2016-04-05 17:39:30.430](RX ==> [FIXTURE]):White Led Off
+White Led Off Pass
+@_@
+
+Item Name:Clear Test With Light(Black), {NA}
+============================ START TEST IR TEST WITH LIGHT(BLACK) (Item77) ============================
+Item Name:IR Test With Light(Black), {NA}
+=============================== START TEST ALS_CLEAR_TEST_DELTA (Item78) ===============================
+Item Name:ALS_Clear_Test_Delta, [10,]
+================================ START TEST ALS_IR_TEST_DELTA (Item79) ================================
+Item Name:ALS_IR_Test_Delta, {NA}
+======================================= START TEST HOLD (Item80) =======================================
+[2016-04-05 17:39:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:30.430](TX ==> [MOBILE]):key
+[2016-04-05 17:39:30.430](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:30.430](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:30.430](TX ==> [FIXTURE]):Open Hold
+[2016-04-05 17:39:30.430](RX ==> [FIXTURE]):Open Hold
+Open Hold Pass
+@_@
+
+[2016-04-05 17:39:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:30.430](TX ==> [MOBILE]):key
+[2016-04-05 17:39:30.430](RX ==> [MOBILE]):key
+AP: HoldKey=1 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=1 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:30.430](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:30.430](TX ==> [FIXTURE]):Close Hold
+[2016-04-05 17:39:30.430](RX ==> [FIXTURE]):Close Hold
+Close Hold Pass
+@_@
+
+[2016-04-05 17:39:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:31.431](TX ==> [MOBILE]):key
+[2016-04-05 17:39:31.431](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+Item Name:Hold, <PASS>
+====================================== START TEST VOL_UP (Item81) ======================================
+[2016-04-05 17:39:31.431](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:31.431](TX ==> [FIXTURE]):Open Volup
+[2016-04-05 17:39:31.431](RX ==> [FIXTURE]):Open Volup
+Open Volup Pass
+@_@
+
+[2016-04-05 17:39:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:31.431](TX ==> [MOBILE]):key
+[2016-04-05 17:39:31.431](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=1 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:31.431](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:31.431](TX ==> [FIXTURE]):Close Volup
+[2016-04-05 17:39:32.432](RX ==> [FIXTURE]):Close Volup
+Close Volup Pass
+@_@
+
+[2016-04-05 17:39:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:32.432](TX ==> [MOBILE]):key
+[2016-04-05 17:39:32.432](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+Item Name:Vol_Up, <PASS>
+====================================== START TEST VOL_DW (Item82) ======================================
+[2016-04-05 17:39:32.432](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:32.432](TX ==> [FIXTURE]):Open Voldown
+[2016-04-05 17:39:32.432](RX ==> [FIXTURE]):Open Voldown
+Open Voldown Pass
+@_@
+
+[2016-04-05 17:39:33.433](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:33.433](TX ==> [MOBILE]):key
+[2016-04-05 17:39:33.433](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=1 RingerA=1 
+PMU: HoldKey=0 VolDown=1 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:33.433](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:33.433](TX ==> [FIXTURE]):Close Voldown
+[2016-04-05 17:39:33.433](RX ==> [FIXTURE]):Close Voldown
+Close Voldown Pass
+@_@
+
+[2016-04-05 17:39:33.433](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:33.433](TX ==> [MOBILE]):key
+[2016-04-05 17:39:33.433](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+Item Name:Vol_Dw, <PASS>
+====================================== START TEST RINGER (Item83) ======================================
+[2016-04-05 17:39:33.433](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:33.433](TX ==> [FIXTURE]):Open Ringer Up
+[2016-04-05 17:39:33.433](RX ==> [FIXTURE]):Open Ringer Up
+Open Ringer Up Pass
+@_@
+
+[2016-04-05 17:39:34.434](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:34.434](TX ==> [MOBILE]):key
+[2016-04-05 17:39:34.434](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:34.434](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:34.434](TX ==> [FIXTURE]):Open Ringer Down
+[2016-04-05 17:39:34.434](RX ==> [FIXTURE]):Open Ringer Down
+Open Ringer Down Pass
+@_@
+
+[2016-04-05 17:39:35.435](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:35.435](TX ==> [MOBILE]):key
+[2016-04-05 17:39:35.435](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:35.435](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:35.435](TX ==> [MOBILE]):key
+[2016-04-05 17:39:35.435](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:35.435](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:35.435](TX ==> [FIXTURE]):Open Ringer Up
+[2016-04-05 17:39:35.435](RX ==> [FIXTURE]):Open Ringer Up
+Open Ringer Up Pass
+@_@
+
+[2016-04-05 17:39:36.436](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:36.436](TX ==> [MOBILE]):key
+[2016-04-05 17:39:36.436](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:36.436](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:36.436](TX ==> [FIXTURE]):Open Ringer Down
+[2016-04-05 17:39:36.436](RX ==> [FIXTURE]):Open Ringer Down
+Open Ringer Down Pass
+@_@
+
+[2016-04-05 17:39:36.436](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:36.436](TX ==> [MOBILE]):key
+[2016-04-05 17:39:37.437](RX ==> [MOBILE]):key
+AP: HoldKey=0 VolUp=0 VolDown=0 RingerA=1 
+PMU: HoldKey=0 VolDown=0 RingerA=1 
+[001D38CC:3020213A] :-) 
+
+Item Name:Ringer, <PASS>
+===================================== START TEST PMUHOLD (Item84) =====================================
+Item Name:PMUHold, <PASS>
+==================================== START TEST PMUVOLDOWN (Item85) ====================================
+Item Name:PMUVolDown, <PASS>
+==================================== START TEST PMURINGER (Item86) ====================================
+Item Name:PMURinger, <PASS>
+=================================== START TEST BUTTON TEST (Item87) ===================================
+Item Name:Button Test, <PASS>
+================================ START TEST MUON_OFF_MAXVALUE (Item88) ================================
+[2016-04-05 17:39:37.437](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:37.437](TX ==> [FIXTURE]):Close Cap
+[2016-04-05 17:39:37.437](RX ==> [FIXTURE]):Close Cap
+Close Cap Pass
+@_@
+
+[2016-04-05 17:39:37.437](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:37.437](TX ==> [FIXTURE]):Close Prox Cap
+[2016-04-05 17:39:37.437](RX ==> [FIXTURE]):Close Prox Cap
+Close Prox Cap Pass
+@_@
+
+[2016-04-05 17:39:37.437](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:38.438](TX ==> [MOBILE]):pattern --iqc 3
+[2016-04-05 17:39:38.438](RX ==> [MOBILE]):pattern --iqc 3
+
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:38.438](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:38.438](TX ==> [MOBILE]):bl -o
+[2016-04-05 17:39:38.438](RX ==> [MOBILE]):bl -o
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:38.438](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:38.438](TX ==> [FIXTURE]):read lcm light 00015
+[2016-04-05 17:39:39.439](RX ==> [FIXTURE]):read lcm light 00015read lcm light 00015
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+
+CH0_DATA:0
+Pass
+@_@
+
+Item Name:Muon_Off_MaxValue, [0,100]
+============================ START TEST MUON_IMAX_CURRENT_SETTING (Item89) ============================
+[2016-04-05 17:39:39.439](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:39.439](TX ==> [MOBILE]):syscfg print BLCl_2
+[2016-04-05 17:39:39.439](RX ==> [MOBILE]):syscfg print BLCl_2
+0x00000100 0x44D01104 0x0000027A 0x00000000 
+[001D38CC:3020213A] :-) 
+
+Item Name:Muon_iMax_Current_Setting, {NA}
+================================ START TEST MUON_IMAX_MAXVALUE (Item90) ================================
+[2016-04-05 17:39:39.439](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:39.439](TX ==> [MOBILE]):bl -c 17616
+[2016-04-05 17:39:39.439](RX ==> [MOBILE]):bl -c 17616
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:39.439](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:39.439](TX ==> [FIXTURE]):read lcm light 00015
+[2016-04-05 17:39:40.440](RX ==> [FIXTURE]):read lcm light 00015read lcm light 00015
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+
+CH0_DATA:426
+Pass
+@_@
+
+Item Name:Muon_iMax_MaxValue, [250,850]
+================================ START TEST MUON_20MA_MAXVALUE (Item91) ================================
+[2016-04-05 17:39:40.440](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:40.440](TX ==> [MOBILE]):bl -c 20000
+[2016-04-05 17:39:40.440](RX ==> [MOBILE]):bl -c 20000
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:41.441](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:41.441](TX ==> [FIXTURE]):read lcm light 00015
+[2016-04-05 17:39:42.442](RX ==> [FIXTURE]):read lcm light 00015read lcm light 00015
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:476
+
+CH0_DATA:473
+
+CH0_DATA:476
+
+CH0_DATA:473
+
+CH0_DATA:476
+
+CH0_DATA:476
+Pass
+@_@
+
+Item Name:Muon_20mA_MaxValue, [250,850]
+============================= START TEST MUON_FLASHCURRENT_CHECK (Item92) =============================
+[2016-04-05 17:39:42.442](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:42.442](TX ==> [MOBILE]):strobe -c LM3539 --set FlashCurrent 80000
+[2016-04-05 17:39:42.442](RX ==> [MOBILE]):strobe -c LM3539 --set FlashCurrent 80000
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:42.442](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:42.442](TX ==> [MOBILE]):strobe -c LM3539 --get FlashCurrent
+[2016-04-05 17:39:42.442](RX ==> [MOBILE]):strobe -c LM3539 --get FlashCurrent
+FlashCurrent value = 79600
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:42.442](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:42.442](TX ==> [MOBILE]):strobe -c LM3539 -s panel --mode Flash on
+[2016-04-05 17:39:42.442](RX ==> [MOBILE]):strobe -c LM3539 -s panel --mode Flash on
+[001D38CC:3020213A] :-) 
+
+Item Name:Muon_FlashCurrent_Check, <79600>
+============================== START TEST MUON_80MA_01_MAXCOUNTS (Item93) ==============================
+[2016-04-05 17:39:42.442](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:42.442](TX ==> [FIXTURE]):read lcm light 00020
+[2016-04-05 17:39:42.442](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:42.442](TX ==> [MOBILE]):wait 250;strobe -c LM3539 -s panel --mode Flash on
+[2016-04-05 17:39:42.442](RX ==> [MOBILE]):wait 250;strobe -c LM3539 -s panel --mode Flash on
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:43.443](RX ==> [FIXTURE]):read lcm light 00020read lcm light 00020
+CH0_DATA:1496
+
+CH0_DATA:1486
+
+CH0_DATA:1476
+
+CH0_DATA:470
+
+CH0_DATA:466
+
+CH0_DATA:1493
+
+CH0_DATA:1480
+
+CH0_DATA:1470
+
+CH0_DATA:1466
+
+CH0_DATA:1106
+
+CH0_DATA:463
+
+CH0_DATA:466
+
+CH0_DATA:466
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:473
+
+CH0_DATA:470
+Pass
+@_@
+
+Item Name:Muon_80mA_01_MaxCounts, [1000,3000]
+============================== START TEST MUON_80MA_02_MAXCOUNTS (Item94) ==============================
+[2016-04-05 17:39:43.443](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:43.443](TX ==> [FIXTURE]):read lcm light 00020
+[2016-04-05 17:39:43.443](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:43.443](TX ==> [MOBILE]):wait 250;strobe -c LM3539 -s panel --mode Flash on
+[2016-04-05 17:39:43.443](RX ==> [MOBILE]):wait 250;strobe -c LM3539 -s panel --mode Flash on
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:44.444](RX ==> [FIXTURE]):read lcm light 00020read lcm light 00020
+CH0_DATA:473
+
+CH0_DATA:473
+
+CH0_DATA:473
+
+CH0_DATA:473
+
+CH0_DATA:473
+
+CH0_DATA:1500
+
+CH0_DATA:1490
+
+CH0_DATA:1476
+
+CH0_DATA:1470
+
+CH0_DATA:500
+
+CH0_DATA:463
+
+CH0_DATA:466
+
+CH0_DATA:466
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+
+CH0_DATA:470
+Pass
+@_@
+
+Item Name:Muon_80mA_02_MaxCounts, [1000,3000]
+================================ START TEST MUON_80MA_MAXVALUE (Item95) ================================
+[2016-04-05 17:39:44.444](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:44.444](TX ==> [MOBILE]):bl -n
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):bl -n
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:Muon_80mA_MaxValue, {NA}
+================================ START TEST MUON_STROBE_RATIO (Item96) ================================
+Item Name:Muon_Strobe_Ratio, [2.8,3.6]
+============================== START TEST MUON_IMAX_STROBE_RATIO (Item97) ==============================
+Item Name:Muon_iMax_Strobe_Ratio, [2.8,4.0]
+=============================== START TEST MUON FAULT REGISTER (Item98) ===============================
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):bl -h
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):bl -h
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):i2c -d 0 0x62 0x17 1
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):i2c -d 0 0x62 0x17 1
+Reading 1 bytes from register offset 0x17 into 0x79CC5618, buffer read:	
+Data:  0x02 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):bl -m
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):bl -m
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:Muon Fault Register, <0x02>
+=========================== START TEST HAWKING TEST PEAK MAGNITUDE (Item99) ===========================
+[2016-04-05 17:39:46.446](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:46.446](TX ==> [FIXTURE]):Open Hawking Led F500 D10
+[2016-04-05 17:39:46.446](RX ==> [FIXTURE]):Open Hawking Led F500 D10
+Open Hawking Led F500 D10 Pass
+@_@
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):processaudio --freebufs all
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):processaudio --freebufs all
+Delete all buffers in the system...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):audio --reset
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):audio --reset
+Resetting arc...
+Speaker already powered off.
+Resetting audmux...
+Resetting baseband...
+Resetting bluetooth...
+Resetting botspeaker...
+Speaker already powered off.
+Resetting codec...
+Resetting fpga...
+Resetting mikeybus...
+Resetting socmca...
+Resetting topspeaker...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):audio --resetblock codec
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):audio --resetblock codec
+Resetting codec...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):audio --resetblock socmca
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):audio --resetblock socmca
+Resetting socmca...
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):routeaudio -b codec -i ain7 -o xsp[0] -r
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):routeaudio -b codec -i ain7 -o xsp[0] -r
+Routing from codec.ain7[l] --> codec.xsp[l]
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):pmuset --ldo 9 --on
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):pmuset --ldo 9 --on
+Turning LDO On
+Done
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):setvol -b codec -n hs-adc-preamp -v 0
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):setvol -b codec -n hs-adc-preamp -v 0
+Set 'hs-adc-preamp' volume to +0 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):setvol -b codec -n hs-adc-pga -v 0
+[2016-04-05 17:39:46.446](RX ==> [MOBILE]):setvol -b codec -n hs-adc-pga -v 0
+Set 'hs-adc-pga' volume to +0 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:46.446](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:46.446](TX ==> [MOBILE]):recordaudio --block socmca --port ap-mca4 --len 1000 --channels 1
+[2016-04-05 17:39:47.447](RX ==> [MOBILE]):recordaudio --block socmca --port ap-mca4 --len 1000 --channels 1
+DataFormat = 00000002
+Configuring 'socmca' to record 48Khz, 16-bit, 1 channels of audio data for 1000mS...
+Requesting new buffer...
+Using buffer 'record0'
+Recording audio...
+Done!
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:47.447](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:47.447](TX ==> [MOBILE]):processaudio -p fft -i record0 -o "--skipSamples 10000 --minHz 10 --maxHz 990 --peakBinWidth 4 --windowNorm true"
+[2016-04-05 17:39:47.447](RX ==> [MOBILE]):processaudio -p fft -i record0 -o "--skipSamples 10000 --minHz 10 --maxHz 990 --peakBinWidth 4 --windowNorm true"
+Number of samples does not equal power of 2 - truncating to 32768 samples...
+Channel 0:
+Using 32768 bins, Peak Bin= 341; Peak Magnitude=0.074922 FS; Frequency:  499.511718 +/- 2.929687 Hz
+DC Magnitude=0.000109 FS
+Signal Bins=9
+SINAD=61.296310 dBFS
+Peak Power: -22.507727 dBFS
+Signal Power: -22.086640 dBFS
+Noise Power: -83.382951 dBFS
+Average Noise PSD: -108.568090 dBFS
+Noise Margin: 86.060363 dBFS
+THD+N: -1.349218 dB
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:47.447](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:47.447](TX ==> [MOBILE]):pmuset --ldo 9 --off
+[2016-04-05 17:39:47.447](RX ==> [MOBILE]):pmuset --ldo 9 --off
+Turning LDO Off
+Done
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:47.447](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:47.447](TX ==> [FIXTURE]):Close Hawking LED
+[2016-04-05 17:39:47.447](RX ==> [FIXTURE]):Close Hawking LED
+Close Hawking LED Pass
+@_@
+
+Item Name:Hawking Test Peak Magnitude, {NA}
+============================= START TEST HAWKING TEST FREQUENCY (Item100) =============================
+Item Name:Hawking Test Frequency, [485,515]
+============================ START TEST HAWKING TEST DC MAGNITUDE (Item101) ============================
+Item Name:Hawking Test DC Magnitude, {NA}
+=============================== START TEST HAWKING TEST SINAD (Item102) ===============================
+Item Name:Hawking Test SINAD, {NA}
+============================= START TEST HAWKING TEST PEAK POWER (Item103) =============================
+Item Name:Hawking Test Peak Power, {NA}
+============================ START TEST HAWKING TEST SIGNAL POWER (Item104) ============================
+Item Name:Hawking Test Signal Power, {NA}
+============================ START TEST HAWKING TEST NOISE POWER (Item105) ============================
+Item Name:Hawking Test Noise Power, {NA}
+========================= START TEST HAWKING TEST AVERAGE NOISE PSD (Item106) =========================
+Item Name:Hawking Test Average Noise PSD, {NA}
+============================ START TEST HAWKING TEST NOISE MARGIN (Item107) ============================
+Item Name:Hawking Test Noise Margin, {NA}
+=============================== START TEST HAWKING TEST THD+N (Item108) ===============================
+Item Name:Hawking Test THD+N, {NA}
+================================= START TEST NEON1 REVISION (Item109) =================================
+[2016-04-05 17:39:48.448](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:48.448](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:39:48.448](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:48.448](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:48.448](TX ==> [MOBILE]):camisp --find
+[2016-04-05 17:39:49.449](RX ==> [MOBILE]):camisp --find
+found 2 sensors :  
+pick number 0, front  detected 
+pick number 2, back  detected 
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:49.449](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:49.449](TX ==> [MOBILE]):camisp --pick back
+[2016-04-05 17:39:49.449](RX ==> [MOBILE]):camisp --pick back
+picked : back 
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:49.449](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:49.449](TX ==> [MOBILE]):camisp --on
+[2016-04-05 17:39:49.449](RX ==> [MOBILE]):camisp --on
+RunOn 0 0 20
+Capture buffer allocated at: 0xC6961EB80, 0xC6968F380 of 460800 bytes each with default value of 0x0 width 640 height 480
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:49.449](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:49.449](TX ==> [MOBILE]):camisp --preview on
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):camisp --preview on
+RunDis on
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0C 1 1
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0C 1 1
+RunI2cRead 0xC
+0x3
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0C 1 1
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0C 1 1
+RunI2cRead 0xC
+0x3
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1 Revision, [3,3]
+================================= START TEST NEON2 REVISION (Item110) =================================
+Item Name:Neon2 Revision, [3,3]
+========================= START TEST 4XLED MEASURE STROBE_FLASH MODE (Item111) =========================
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x02 1 1 0x5B
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x02 1 1 0x5B
+RunI2cWrite 0x2 0x5B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x02 1 1 0x5B
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x02 1 1 0x5B
+RunI2cWrite 0x2 0x5B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x08 1 1 0x14
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x08 1 1 0x14
+RunI2cWrite 0x8 0x14
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x08 1 1 0x14
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x08 1 1 0x14
+RunI2cWrite 0x8 0x14
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x09 1 1 0x1B
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x09 1 1 0x1B
+RunI2cWrite 0x9 0x1B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x09 1 1 0x1B
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x09 1 1 0x1B
+RunI2cWrite 0x9 0x1B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x03 1 1 0x2A
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x03 1 1 0x2A
+RunI2cWrite 0x3 0x2A
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x04 1 1 0x2A
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x04 1 1 0x2A
+RunI2cWrite 0x4 0x2A
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x03 1 1 0x2A
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x03 1 1 0x2A
+RunI2cWrite 0x3 0x2A
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x04 1 1 0x2A
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x04 1 1 0x2A
+RunI2cWrite 0x4 0x2A
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0xB3
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0xB3
+RunI2cWrite 0x1 0xB3
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0xB3
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0xB3
+RunI2cWrite 0x1 0xB3
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x012f 2 1 0x01
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x012f 2 1 0x01
+RunI2cWrite 0x12F 0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0347 2 1 0x04
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0347 2 1 0x04
+RunI2cWrite 0x347 0x4
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0348 2 1 0x01
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0348 2 1 0x01
+RunI2cWrite 0x348 0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x035a 2 1 0xFF
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x035a 2 1 0xFF
+RunI2cWrite 0x35A 0xFF
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x035b 2 1 0xFF
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x035b 2 1 0xFF
+RunI2cWrite 0x35B 0xFF
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0361 2 1 0x01
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0361 2 1 0x01
+RunI2cWrite 0x361 0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0360 2 1 0x01
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0360 2 1 0x01
+RunI2cWrite 0x360 0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:50.450](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:50.450](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:50.450](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:50.450](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0340 2 1 0x01
+[2016-04-05 17:39:50.450](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x10 0x0340 2 1 0x01
+RunI2cWrite 0x340 0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:51.451](RX ==> [FIXTURE]):Strobe Led State
+0
+0
+0
+58364
+65535
+65535
+45020
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED On 65535 Pass
+@_@
+
+[2016-04-05 17:39:51.451](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:51.451](TX ==> [MOBILE]):wait 500
+[2016-04-05 17:39:51.451](RX ==> [MOBILE]):wait 500
+[001D38CC:3020213A] :-) 
+
+Item Name:4xLED Measure Strobe_Flash Mode, <PASS>
+========================= START TEST NEON1 4XLED REGISTER 0XA CHECK (Item112) =========================
+[2016-04-05 17:39:51.451](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:51.451](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0A 1 1
+[2016-04-05 17:39:51.451](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0A 1 1
+RunI2cRead 0xA
+0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1 4xLED Register 0xA Check, <1>
+========================= START TEST NEON1 4XLED REGISTER 0XB CHECK (Item113) =========================
+[2016-04-05 17:39:51.451](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:51.451](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0B 1 1
+[2016-04-05 17:39:51.451](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0B 1 1
+RunI2cRead 0xB
+0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1 4xLED Register 0xB Check, <0>
+========================= START TEST NEON2 4XLED REGISTER 0XA CHECK (Item114) =========================
+[2016-04-05 17:39:51.451](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:51.451](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0A 1 1
+[2016-04-05 17:39:51.451](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0A 1 1
+RunI2cRead 0xA
+0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2 4xLED Register 0xA Check, <1>
+========================= START TEST NEON2 4XLED REGISTER 0XB CHECK (Item115) =========================
+[2016-04-05 17:39:51.451](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:51.451](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0B 1 1
+[2016-04-05 17:39:51.451](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0B 1 1
+RunI2cRead 0xB
+0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2 4xLED Register 0xB Check, <0>
+============================ START TEST 4XLED MEASURE STROBE OFF (Item116) ============================
+[2016-04-05 17:39:51.451](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:51.451](TX ==> [MOBILE]):camisp --preview off
+[2016-04-05 17:39:52.452](RX ==> [MOBILE]):camisp --preview off
+RunDis off
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:52.452](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:52.452](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:52.452](RX ==> [FIXTURE]):Strobe Led State
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED Off 0 Pass
+@_@
+
+Item Name:4xLED Measure Strobe Off, <PASS>
+==================== START TEST NEON1LED1 MEASURE COOL STROBE_FLASH MODE (Item117) ====================
+[2016-04-05 17:39:52.452](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:52.452](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:39:53.453](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:53.453](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:53.453](TX ==> [MOBILE]):camisp --find
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):camisp --find
+found 2 sensors :  
+pick number 0, front  detected 
+pick number 2, back  detected 
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0C 1 1
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0C 1 1
+RunI2cRead 0xC
+0x3
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0C 1 1
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0C 1 1
+RunI2cRead 0xC
+0x3
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x02 1 1 0x5B
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x02 1 1 0x5B
+RunI2cWrite 0x2 0x5B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x02 1 1 0x5B
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x02 1 1 0x5B
+RunI2cWrite 0x2 0x5B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x08 1 1 0x1A
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x08 1 1 0x1A
+RunI2cWrite 0x8 0x1A
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x08 1 1 0x1A
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x08 1 1 0x1A
+RunI2cWrite 0x8 0x1A
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x09 1 1 0x3B
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x09 1 1 0x3B
+RunI2cWrite 0x9 0x3B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x09 1 1 0x3B
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x09 1 1 0x3B
+RunI2cWrite 0x9 0x3B
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x03 1 1 0x54
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x03 1 1 0x54
+RunI2cWrite 0x3 0x54
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:54.454](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x0D
+[2016-04-05 17:39:54.454](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x0D
+RunI2cWrite 0x1 0xD
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:54.454](RX ==> [FIXTURE]):Strobe Led State
+11724
+36732
+36160
+35808
+35520
+35284
+35044
+34836
+34624
+25812
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED On 36732 Pass
+@_@
+
+[2016-04-05 17:39:54.454](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:54.454](TX ==> [MOBILE]):wait 200
+[2016-04-05 17:39:55.455](RX ==> [MOBILE]):wait 200
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1LED1 Measure Cool Strobe_Flash Mode, <PASS>
+========================== START TEST NEON1LED1 REGISTER 0XA CHECK (Item118) ==========================
+[2016-04-05 17:39:55.455](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:55.455](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0A 1 1
+[2016-04-05 17:39:55.455](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0A 1 1
+RunI2cRead 0xA
+0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1LED1 Register 0xA Check, <1>
+========================== START TEST NEON1LED1 REGISTER 0XB CHECK (Item119) ==========================
+[2016-04-05 17:39:55.455](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:55.455](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0B 1 1
+[2016-04-05 17:39:55.455](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0B 1 1
+RunI2cRead 0xB
+0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1LED1 Register 0xB Check, <0>
+======================== START TEST NEON1LED1 MEASURE COOL STROBE OFF (Item120) ========================
+[2016-04-05 17:39:55.455](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:55.455](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x00
+[2016-04-05 17:39:55.455](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x00
+RunI2cWrite 0x1 0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:55.455](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:55.455](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:55.455](RX ==> [FIXTURE]):Strobe Led State
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED Off 0 Pass
+@_@
+
+Item Name:Neon1LED1 Measure Cool Strobe Off, <PASS>
+==================== START TEST NEON1LED2 MEASURE AMBER STROBE_FLASH MODE (Item121) ====================
+[2016-04-05 17:39:55.455](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:55.455](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x04 1 1 0x54
+[2016-04-05 17:39:55.455](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x04 1 1 0x54
+RunI2cWrite 0x4 0x54
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:55.455](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:55.455](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:55.455](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:55.455](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x0E
+[2016-04-05 17:39:55.455](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x0E
+RunI2cWrite 0x1 0xE
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:55.455](RX ==> [FIXTURE]):Strobe Led State
+0
+10012
+22896
+22100
+21624
+21256
+20928
+20632
+20384
+20132
+16908
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED On 22896 Pass
+@_@
+
+[2016-04-05 17:39:55.455](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:55.455](TX ==> [MOBILE]):wait 200
+[2016-04-05 17:39:56.456](RX ==> [MOBILE]):wait 200
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1LED2 Measure Amber Strobe_Flash Mode, <PASS>
+========================== START TEST NEON1LED2 REGISTER 0XA CHECK (Item122) ==========================
+[2016-04-05 17:39:56.456](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:56.456](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0A 1 1
+[2016-04-05 17:39:56.456](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0A 1 1
+RunI2cRead 0xA
+0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1LED2 Register 0xA Check, <1>
+========================== START TEST NEON1LED2 REGISTER 0XB CHECK (Item123) ==========================
+[2016-04-05 17:39:56.456](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:56.456](TX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0B 1 1
+[2016-04-05 17:39:56.456](RX ==> [MOBILE]):time camisp --i2cread 0 0x63 0x0B 1 1
+RunI2cRead 0xB
+0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon1LED2 Register 0xB Check, <0>
+======================= START TEST NEON1LED2 MEASURE AMBER STROBE OFF (Item124) =======================
+[2016-04-05 17:39:56.456](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:56.456](TX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x00
+[2016-04-05 17:39:56.456](RX ==> [MOBILE]):time camisp --i2cwrite 0 0x63 0x01 1 1 0x00
+RunI2cWrite 0x1 0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:56.456](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:56.456](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:56.456](RX ==> [FIXTURE]):Strobe Led State
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED Off 0 Pass
+@_@
+
+Item Name:Neon1LED2 Measure Amber Strobe Off, <PASS>
+==================== START TEST NEON2LED1 MEASURE COOL STROBE_FLASH MODE (Item125) ====================
+[2016-04-05 17:39:56.456](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:56.456](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x03 1 1 0x54
+[2016-04-05 17:39:56.456](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x03 1 1 0x54
+RunI2cWrite 0x3 0x54
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:56.456](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:56.456](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:56.456](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:56.456](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x0D
+[2016-04-05 17:39:56.456](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x0D
+RunI2cWrite 0x1 0xD
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:57.457](RX ==> [FIXTURE]):Strobe Led State
+0
+31196
+65535
+65535
+65535
+65160
+64692
+64244
+63832
+63444
+46572
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED On 65535 Pass
+@_@
+
+[2016-04-05 17:39:57.457](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:57.457](TX ==> [MOBILE]):wait 200
+[2016-04-05 17:39:57.457](RX ==> [MOBILE]):wait 200
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED1 Measure Cool Strobe_Flash Mode, <PASS>
+========================== START TEST NEON2LED1 REGISTER 0XA CHECK (Item126) ==========================
+[2016-04-05 17:39:57.457](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:57.457](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0A 1 1
+[2016-04-05 17:39:57.457](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0A 1 1
+RunI2cRead 0xA
+0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED1 Register 0xA Check, <1>
+========================== START TEST NEON2LED1 REGISTER 0XB CHECK (Item127) ==========================
+[2016-04-05 17:39:57.457](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:57.457](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0B 1 1
+[2016-04-05 17:39:57.457](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0B 1 1
+RunI2cRead 0xB
+0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED1 Register 0xB Check, <0>
+======================== START TEST NEON2LED1 MEASURE COOL STROBE OFF (Item128) ========================
+[2016-04-05 17:39:57.457](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:57.457](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x00
+[2016-04-05 17:39:57.457](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x00
+RunI2cWrite 0x1 0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:57.457](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:57.457](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:57.457](RX ==> [FIXTURE]):Strobe Led State
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED Off 0 Pass
+@_@
+
+Item Name:Neon2LED1 Measure Cool Strobe Off, <PASS>
+==================== START TEST NEON2LED2 MEASURE AMBER STROBE_FLASH MODE (Item129) ====================
+[2016-04-05 17:39:57.457](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:57.457](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x04 1 1 0x54
+[2016-04-05 17:39:57.457](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x04 1 1 0x54
+RunI2cWrite 0x4 0x54
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:57.457](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:57.457](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:57.457](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:57.457](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x0E
+[2016-04-05 17:39:57.457](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x0E
+RunI2cWrite 0x1 0xE
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:58.458](RX ==> [FIXTURE]):Strobe Led State
+0
+16616
+43836
+42168
+41224
+40492
+39908
+39360
+38872
+38400
+33148
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED On 43836 Pass
+@_@
+
+[2016-04-05 17:39:58.458](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:58.458](TX ==> [MOBILE]):wait 200
+[2016-04-05 17:39:58.458](RX ==> [MOBILE]):wait 200
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED2 Measure Amber Strobe_Flash Mode, <PASS>
+========================== START TEST NEON2LED2 REGISTER 0XA CHECK (Item130) ==========================
+[2016-04-05 17:39:58.458](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:58.458](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0A 1 1
+[2016-04-05 17:39:58.458](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0A 1 1
+RunI2cRead 0xA
+0x1
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED2 Register 0xA Check, <1>
+========================== START TEST NEON2LED2 REGISTER 0XB CHECK (Item131) ==========================
+[2016-04-05 17:39:58.458](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:58.458](TX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0B 1 1
+[2016-04-05 17:39:58.458](RX ==> [MOBILE]):time camisp --i2cread 1 0x63 0x0B 1 1
+RunI2cRead 0xB
+0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED2 Register 0xB Check, <0>
+======================= START TEST NEON2LED2 MEASURE AMBER STROBE OFF (Item132) =======================
+[2016-04-05 17:39:58.458](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:58.458](TX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x00
+[2016-04-05 17:39:58.458](RX ==> [MOBILE]):time camisp --i2cwrite 1 0x63 0x01 1 1 0x00
+RunI2cWrite 0x1 0x0
+Pass
+time: 3 ms
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:58.458](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:39:58.458](TX ==> [FIXTURE]):Strobe Led State
+[2016-04-05 17:39:58.458](RX ==> [FIXTURE]):Strobe Led State
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Strobe LED Off 0 Pass
+@_@
+
+[2016-04-05 17:39:58.458](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:58.458](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:39:59.459](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+Item Name:Neon2LED2 Measure Amber Strobe Off, <PASS>
+================================ START TEST FIND CAMERA_BACK (Item133) ================================
+Item Name:Find Camera_Back, <back  detected>
+================================= START TEST CAMERA DLI_BACK (Item134) =================================
+[2016-04-05 17:39:59.459](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:59.459](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:39:59.459](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:39:59.459](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:39:59.459](TX ==> [MOBILE]):camisp --pick back
+[2016-04-05 17:40:00.40](RX ==> [MOBILE]):camisp --pick back
+picked : back 
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:00.40](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:00.40](TX ==> [MOBILE]):camisp --dli
+[2016-04-05 17:40:02.42](RX ==> [MOBILE]):camisp --dli
+RunExit
+Capture buffer allocated at: 0xC6961EB80, 0xC6968F380 of 460800 bytes each with default value of 0x0 width 640 height 480
+Using DLI File: nandfs:\AppleInternal\Diags\ISP\D10D11\MX303_colorbar_vga_420_141000.bin
+RunExit
+Pass
+[001D38CC:3020213A] :-)
+
+Item Name:Camera Dli_Back, {NA}
+================================= START TEST BACK CAMERA RGB (Item135) =================================
+[2016-04-05 17:40:03.43](Clear Buffer ==> [MOBILE]): 
+
+[2016-04-05 17:40:03.43](TX ==> [MOBILE]):camisp --preview on
+[2016-04-05 17:40:05.45](RX ==> [MOBILE]):camisp --preview on
+RunDis on
+Capture buffer allocated at: 0xC6961EB80, 0xC6968F380 of 460800 bytes each with default value of 0x0 width 640 height 480
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:05.45](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:05.45](TX ==> [FIXTURE]):Back R Led On
+[2016-04-05 17:40:05.45](RX ==> [FIXTURE]):Back R Led On
+Back R Led On Pass
+@_@
+
+[2016-04-05 17:40:05.45](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:05.45](TX ==> [MOBILE]):camisp --rgb
+[2016-04-05 17:40:05.45](RX ==> [MOBILE]):camisp --rgb
+RunRGB begin
+RunRGB R 0xFF G 0x0 B 0x1E
+Red
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:05.45](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:05.45](TX ==> [FIXTURE]):Back R Led Off
+[2016-04-05 17:40:06.46](RX ==> [FIXTURE]):Back R Led Off
+Back R Led Off Pass
+@_@
+
+[2016-04-05 17:40:06.46](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:06.46](TX ==> [FIXTURE]):Back G Led On
+[2016-04-05 17:40:06.46](RX ==> [FIXTURE]):Back G Led On
+Back G Led On Pass
+@_@
+
+[2016-04-05 17:40:07.47](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:07.47](TX ==> [MOBILE]):camisp --rgb
+[2016-04-05 17:40:07.47](RX ==> [MOBILE]):camisp --rgb
+RunRGB begin
+RunRGB R 0x0 G 0x90 B 0x15
+Green
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:07.47](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:07.47](TX ==> [FIXTURE]):Back G Led Off
+[2016-04-05 17:40:07.47](RX ==> [FIXTURE]):Back G Led Off
+Back G Led Off Pass
+@_@
+
+[2016-04-05 17:40:07.47](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:07.47](TX ==> [FIXTURE]):Back B Led On
+[2016-04-05 17:40:07.47](RX ==> [FIXTURE]):Back B Led On
+Back B Led On Pass
+@_@
+
+[2016-04-05 17:40:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:08.48](TX ==> [MOBILE]):camisp --rgb
+[2016-04-05 17:40:08.48](RX ==> [MOBILE]):camisp --rgb
+RunRGB begin
+RunRGB R 0x0 G 0x3E B 0xFF
+Blue
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:08.48](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:08.48](TX ==> [FIXTURE]):Back B Led Off
+[2016-04-05 17:40:08.48](RX ==> [FIXTURE]):Back B Led Off
+Back B Led Off Pass
+@_@
+
+[2016-04-05 17:40:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:08.48](TX ==> [MOBILE]):camisp --preview off
+[2016-04-05 17:40:08.48](RX ==> [MOBILE]):camisp --preview off
+RunDis off
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:08.48](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:08.48](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:40:09.49](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+Item Name:Back Camera RGB, {NA}
+================================= START TEST SPHERESELFTEST (Item136) =================================
+[2016-04-05 17:40:09.49](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:09.49](TX ==> [MOBILE]):camisp --on
+[2016-04-05 17:40:10.410](RX ==> [MOBILE]):camisp --on
+RunOn 0 0 20
+Capture buffer allocated at: 0xC6961EB80, 0xC6968F380 of 460800 bytes each with default value of 0x0 width 640 height 480
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:10.410](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:10.410](TX ==> [MOBILE]):camisp --setoismode position
+[2016-04-05 17:40:10.410](RX ==> [MOBILE]):camisp --setoismode position
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:10.410](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:10.410](TX ==> [MOBILE]):camisp --preview on
+[2016-04-05 17:40:11.411](RX ==> [MOBILE]):camisp --preview on
+RunDis on
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:11.411](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:11.411](TX ==> [MOBILE]):camisp --oisselftest 75 150
+[2016-04-05 17:40:16.416](RX ==> [MOBILE]):camisp --oisselftest 75 150
+AverageDisplacementLimit = 75 tenths of microns
+StdDevLimit = 150 tenths of microns
+Setting focus to 0
+Setting mode
+
+Setting [-850,0]  			MeasuredAvgDisplacement [3.392201]
+MeasuredStdDev [1.854994]		MeasuredMaxDisplacement [8.062257]
+MeasuredMinDisplacement [0.000000]	PASS
+
+Setting [-600,600]  			MeasuredAvgDisplacement [3.816480]
+MeasuredStdDev [1.791110]		MeasuredMaxDisplacement [7.615773]
+MeasuredMinDisplacement [1.000000]	PASS
+
+Setting [0,850]  			MeasuredAvgDisplacement [3.190236]
+MeasuredStdDev [1.282127]		MeasuredMaxDisplacement [5.656854]
+MeasuredMinDisplacement [1.000000]	PASS
+
+Setting [600,600]  			MeasuredAvgDisplacement [3.588767]
+MeasuredStdDev [1.421781]		MeasuredMaxDisplacement [7.000000]
+MeasuredMinDisplacement [2.236068]	PASS
+
+Setting [850,0]  			MeasuredAvgDisplacement [3.597260]
+MeasuredStdDev [2.066077]		MeasuredMaxDisplacement [7.280109]
+MeasuredMinDisplacement [0.000000]	PASS
+
+Setting [600,-600]  			MeasuredAvgDisplacement [3.926105]
+MeasuredStdDev [2.178032]		MeasuredMaxDisplacement [9.848857]
+MeasuredMinDisplacement [0.000000]	PASS
+
+Setting [0,-850]  			MeasuredAvgDisplacement [3.248831]
+MeasuredStdDev [1.489650]		MeasuredMaxDisplacement [6.000000]
+MeasuredMinDisplacement [1.000000]	PASS
+
+Setting [-600,-600]  			MeasuredAvgDisplacement [3.275000]
+MeasuredStdDev [1.567241]		MeasuredMaxDisplacement [6.082762]
+MeasuredMinDisplacement [0.000000]	PASS
+
+Self-test passed
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:16.416](TX ==> [MOBILE]):camisp --preview off
+[2016-04-05 17:40:16.416](RX ==> [MOBILE]):camisp --preview off
+RunDis off
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:16.416](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:16.416](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:40:17.417](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+Item Name:SphereSelfTest, <Pass>
+====================== START TEST BACK CAMERA DISPLACEMENT_AVG[-850 0] (Item137) ======================
+Item Name:Back Camera Displacement_Avg[-850 0], {NA}
+====================== START TEST BACK CAMERA DISPLACEMENT_STD[-850 0] (Item138) ======================
+Item Name:Back Camera Displacement_Std[-850 0], {NA}
+===================== START TEST BACK CAMERA DISPLACEMENT_AVG[-600 600] (Item139) =====================
+Item Name:Back Camera Displacement_Avg[-600 600], {NA}
+===================== START TEST BACK CAMERA DISPLACEMENT_STD[-600 600] (Item140) =====================
+Item Name:Back Camera Displacement_Std[-600 600], {NA}
+======================= START TEST BACK CAMERA DISPLACEMENT_AVG[0 850] (Item141) =======================
+Item Name:Back Camera Displacement_Avg[0 850], {NA}
+======================= START TEST BACK CAMERA DISPLACEMENT_STD[0 850] (Item142) =======================
+Item Name:Back Camera Displacement_Std[0 850], {NA}
+====================== START TEST BACK CAMERA DISPLACEMENT_AVG[600 600] (Item143) ======================
+Item Name:Back Camera Displacement_Avg[600 600], {NA}
+====================== START TEST BACK CAMERA DISPLACEMENT_STD[600 600] (Item144) ======================
+Item Name:Back Camera Displacement_Std[600 600], {NA}
+======================= START TEST BACK CAMERA DISPLACEMENT_AVG[850 0] (Item145) =======================
+Item Name:Back Camera Displacement_Avg[850 0], {NA}
+======================= START TEST BACK CAMERA DISPLACEMENT_STD[850 0] (Item146) =======================
+Item Name:Back Camera Displacement_Std[850 0], {NA}
+===================== START TEST BACK CAMERA DISPLACEMENT_AVG[600 -600] (Item147) =====================
+Item Name:Back Camera Displacement_Avg[600 -600], {NA}
+===================== START TEST BACK CAMERA DISPLACEMENT_STD[600 -600] (Item148) =====================
+Item Name:Back Camera Displacement_Std[600 -600], {NA}
+====================== START TEST BACK CAMERA DISPLACEMENT_AVG[0 -850] (Item149) ======================
+Item Name:Back Camera Displacement_Avg[0 -850], {NA}
+====================== START TEST BACK CAMERA DISPLACEMENT_STD[0 -850] (Item150) ======================
+Item Name:Back Camera Displacement_Std[0 -850], {NA}
+===================== START TEST BACK CAMERA DISPLACEMENT_AVG[-600 -600] (Item151) =====================
+Item Name:Back Camera Displacement_Avg[-600 -600], {NA}
+===================== START TEST BACK CAMERA DISPLACEMENT_STD[-600 -600] (Item152) =====================
+Item Name:Back Camera Displacement_Std[-600 -600], {NA}
+================================ START TEST FIND CAMERA_FRONT (Item153) ================================
+Item Name:Find Camera_Front, <front  detected>
+================================ START TEST CAMERA DLI_FRONT (Item154) ================================
+[2016-04-05 17:40:17.417](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:17.417](TX ==> [MOBILE]):camisp --pick front
+[2016-04-05 17:40:18.418](RX ==> [MOBILE]):camisp --pick front
+picked : front 
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:18.418](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:18.418](TX ==> [MOBILE]):camisp --dli
+[2016-04-05 17:40:21.421](RX ==> [MOBILE]):camisp --dli
+RunExit
+Capture buffer allocated at: 0xC688AED80, 0xC6891F580 of 460800 bytes each with default value of 0x0 width 640 height 480
+Using DLI File: nandfs:\AppleInternal\Diags\ISP\D10D11\MX314_colorbar_vga_420_141000.bin
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+Item Name:Camera Dli_Front, {NA}
+================================ START TEST FRONT CAMERA RGB (Item155) ================================
+[2016-04-05 17:40:21.421](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:21.421](TX ==> [MOBILE]):camisp --preview on
+[2016-04-05 17:40:23.423](RX ==> [MOBILE]):camisp --preview on
+RunDis on
+Capture buffer allocated at: 0xC688AED80, 0xC6891F580 of 460800 bytes each with default value of 0x0 width 640 height 480
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:23.423](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:23.423](TX ==> [FIXTURE]):Front R Led On
+[2016-04-05 17:40:23.423](RX ==> [FIXTURE]):Front R Led On
+Front R Led On Pass
+@_@
+
+[2016-04-05 17:40:23.423](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:23.423](TX ==> [MOBILE]):camisp --rgb
+[2016-04-05 17:40:24.424](RX ==> [MOBILE]):camisp --rgb
+RunRGB begin
+RunRGB R 0xE9 G 0x0 B 0x22
+Red
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:24.424](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:24.424](TX ==> [FIXTURE]):Front R Led Off
+[2016-04-05 17:40:24.424](RX ==> [FIXTURE]):Front R Led Off
+Front R Led Off Pass
+@_@
+
+[2016-04-05 17:40:24.424](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:24.424](TX ==> [FIXTURE]):Front G Led On
+[2016-04-05 17:40:24.424](RX ==> [FIXTURE]):Front G Led On
+Front G Led On Pass
+@_@
+
+[2016-04-05 17:40:25.425](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:25.425](TX ==> [MOBILE]):camisp --rgb
+[2016-04-05 17:40:25.425](RX ==> [MOBILE]):camisp --rgb
+RunRGB begin
+RunRGB R 0x0 G 0x90 B 0x29
+Green
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:25.425](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:25.425](TX ==> [FIXTURE]):Front G Led Off
+[2016-04-05 17:40:25.425](RX ==> [FIXTURE]):Front G Led Off
+Front G Led Off Pass
+@_@
+
+[2016-04-05 17:40:25.425](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:25.425](TX ==> [FIXTURE]):Front B Led On
+[2016-04-05 17:40:25.425](RX ==> [FIXTURE]):Front B Led On
+Front B Led On Pass
+@_@
+
+[2016-04-05 17:40:26.426](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:26.426](TX ==> [MOBILE]):camisp --rgb
+[2016-04-05 17:40:26.426](RX ==> [MOBILE]):camisp --rgb
+RunRGB begin
+RunRGB R 0x0 G 0x31 B 0xFF
+Blue
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:26.426](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:26.426](TX ==> [FIXTURE]):Front B Led Off
+[2016-04-05 17:40:26.426](RX ==> [FIXTURE]):Front B Led Off
+Front B Led Off Pass
+@_@
+
+[2016-04-05 17:40:26.426](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:26.426](TX ==> [MOBILE]):camisp --preview off
+[2016-04-05 17:40:27.427](RX ==> [MOBILE]):camisp --preview off
+RunDis off
+Pass
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:27.427](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:27.427](TX ==> [MOBILE]):camisp --exit
+[2016-04-05 17:40:27.427](RX ==> [MOBILE]):camisp --exit
+RunExit
+Pass
+[001D38CC:3020213A] :-) 
+
+Item Name:Front Camera RGB, {NA}
+============================ START TEST LIFETIME MAX TEMPERATURE (Item156) ============================
+[2016-04-05 17:40:27.427](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:27.427](TX ==> [MOBILE]):dev -k GasGauge -e read_blk 59 0
+[2016-04-05 17:40:27.427](RX ==> [MOBILE]):dev -k GasGauge -e read_blk 59 0
+Class 59, Block 0:
+0000000: 01 2C 00 B8 0F 8E 0E 93 03 84 F9 05 00 00 00 00  .,..............
+0000010: 07 5D 07 1E 00 01 00 01 FF 29 FF 29 07 89 07 89  .].......).)....
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:Lifetime Max Temperature, [0,60]
+======================== START TEST ACC2 ZERO CURRENT BACKPOWER TEST (Item157) ========================
+[2016-04-05 17:40:27.427](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:27.427](TX ==> [MOBILE]):tristar --read 0x09
+[2016-04-05 17:40:27.427](RX ==> [MOBILE]):tristar --read 0x09
+>> read
+reg 0x9 = 0xD0
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:27.427](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:27.427](TX ==> [MOBILE]):tristar --read 0x02
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --read 0x02
+>> read
+reg 0x2 = 0x0
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):accessory -m bypass
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):accessory -m bypass
+setting accessory rail to bypass mode
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):accessory --powerpin acc2
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):accessory --powerpin acc2
+setting switch to output power on acc2
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --write "0x09 0xdf"
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --write "0x09 0xdf"
+>> write
+write reg 0x9 = 0xDF
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --read 0x0a
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --read 0x0a
+>> read
+reg 0xA = 0x0
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Zero Current Backpower Test, <0x0>
+======================== START TEST ACC1 ZERO CURRENT BACKPOWER TEST (Item158) ========================
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --write "0x09 0xd0"
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --write "0x09 0xd0"
+>> write
+write reg 0x9 = 0xD0
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):accessory --powerpin acc1
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):accessory --powerpin acc1
+setting switch to output power on acc1
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --write "0x09 0xdf"
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --write "0x09 0xdf"
+>> write
+write reg 0x9 = 0xDF
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --read 0x0a
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --read 0x0a
+>> read
+reg 0xA = 0x0
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Zero Current Backpower Test, <0x0>
+============================= START TEST ACC2 NORMAL VLDO6 70MA (Item159) =============================
+[2016-04-05 17:40:28.428](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:28.428](TX ==> [FIXTURE]):Bacongnd Short
+[2016-04-05 17:40:28.428](RX ==> [FIXTURE]):Bacongnd Short
+Bacongnd Short Pass
+@_@
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:28.428](TX ==> [FIXTURE]):Kong To ACC1
+[2016-04-05 17:40:28.428](RX ==> [FIXTURE]):Kong To ACC1
+Kong To ACC1 Pass
+@_@
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:28.428](TX ==> [FIXTURE]):MACC2 BYPASS OFF
+[2016-04-05 17:40:28.428](RX ==> [FIXTURE]):MACC2 BYPASS OFF
+MACC2 BYPASS OFF Pass
+@_@
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:28.428](TX ==> [FIXTURE]):ACC2 Meas On
+[2016-04-05 17:40:28.428](RX ==> [FIXTURE]):ACC2 Meas On
+ACC2 Meas On Pass
+@_@
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):accessory -m off
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):accessory -m off
+turning off accessory power
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --write "0x09 0xd0"
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --write "0x09 0xd0"
+>> write
+write reg 0x9 = 0xD0
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --write "0x02 0x00"
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --write "0x02 0x00"
+>> write
+write reg 0x2 = 0x0
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):accessory --powermode normal
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):accessory --powermode normal
+setting accessory rail to normal mode
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):accessory --powerpin acc2
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):accessory --powerpin acc2
+setting switch to output power on acc2
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+PMU ADC test
+ADC Channel ldo6: 3304.8373 mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Normal vldo6 70mA, [3200,3400]
+============================= START TEST ACC2 NORMAL ILDO6 70MA (Item160) =============================
+[2016-04-05 17:40:28.428](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:28.428](TX ==> [FIXTURE]):E75dn Meas On
+[2016-04-05 17:40:28.428](RX ==> [FIXTURE]):E75dn Meas On
+E75dn Meas On Pass
+@_@
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:28.428](TX ==> [FIXTURE]):E75dp Meas On
+[2016-04-05 17:40:28.428](RX ==> [FIXTURE]):E75dp Meas On
+E75dp Meas On Pass
+@_@
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+PMU ADC test
+ADC Channel ildo6: 72.0279 mA
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Normal ildo6 70mA, [50,115]
+============================== START TEST ACC2 NORMAL V_R 70MA (Item161) ==============================
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+[2016-04-05 17:40:28.428](RX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:28.428](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:28.428](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1600.1221 mV
+brick_id_usb_d+: 4mV
+brick_id_usb_d-: 1599mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Normal V_R 70mA, {NA}
+============================= START TEST ACC2 NORMAL ILDO6 100MA (Item162) =============================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:29.429](TX ==> [FIXTURE]):MACC2 BYPASS ON
+[2016-04-05 17:40:29.429](RX ==> [FIXTURE]):MACC2 BYPASS ON
+MACC2 BYPASS ON Pass
+@_@
+
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+PMU ADC test
+ADC Channel ildo6: 106.8772 mA
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Normal ildo6 100mA, [80,145]
+============================== START TEST ACC2 NORMAL V_R 100MA (Item163) ==============================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1589.7435 mV
+brick_id_usb_d+: 8mV
+brick_id_usb_d-: 1585mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Normal V_R 100mA, {NA}
+============================ START TEST ACC2_NORMAL_CURRENT 100MA (Item164) ============================
+Item Name:ACC2_Normal_Current 100mA, {NA}
+=============================== START TEST ACC2_BRICKID_SWAP1 (Item165) ===============================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 3.9682 mV
+brick_id_usb_d+: 6mV
+brick_id_usb_d-: 1586mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2_BrickID_SWAP1, {NA}
+================================ START TEST ACC2 BYPASS VLDO6 (Item166) ================================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):i2c -d 0 0x1a 0x06 1
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):i2c -d 0 0x1a 0x06 1
+Reading 1 bytes from register offset 0x06 into 0x79B48698, buffer read:	
+Data:  0x08 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):accessory --powermode bypass
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):accessory --powermode bypass
+setting accessory rail to bypass mode
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+PMU ADC test
+ADC Channel ldo6: 3773.3076 mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Bypass vldo6, [3400,4350]
+================================ START TEST ACC2 BYPASS ILDO6 (Item167) ================================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+PMU ADC test
+ADC Channel ildo6: 0.4834 mA
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Bypass ildo6, {NA}
+================================= START TEST ACC2 BYPASS V_R (Item168) =================================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1813.7973 mV
+brick_id_usb_d+: 9mV
+brick_id_usb_d-: 1809mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2 Bypass V_R, {NA}
+============================== START TEST ACC2_BYPASS_IMPEDANCE (Item169) ==============================
+Item Name:ACC2_Bypass_Impedance, {NA}
+=============================== START TEST ACC2_BRICKID_SWAP2 (Item170) ===============================
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+[2016-04-05 17:40:29.429](RX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:29.429](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:29.429](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 8.8522 mV
+brick_id_usb_d+: 9mV
+brick_id_usb_d-: 1811mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2_BrickID_SWAP2, {NA}
+=============================== START TEST ACC2_BRICKID_SWAP3 (Item171) ===============================
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):i2c -d 0 0x1a 0x06 1
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):i2c -d 0 0x1a 0x06 1
+Reading 1 bytes from register offset 0x06 into 0x79BAC518, buffer read:	
+Data:  0x08 
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1809.2185 mV
+brick_id_usb_d+: 8mV
+brick_id_usb_d-: 1811mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC2_BrickID_SWAP3, {NA}
+============================= START TEST ACC1 NORMAL VLDO6 70MA (Item172) =============================
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):accessory -m off
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):accessory -m off
+turning off accessory power
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:30.430](TX ==> [FIXTURE]):MACC2 BYPASS OFF
+[2016-04-05 17:40:30.430](RX ==> [FIXTURE]):MACC2 BYPASS OFF
+MACC2 BYPASS OFF Pass
+@_@
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:30.430](TX ==> [FIXTURE]):ACC2 Meas Off
+[2016-04-05 17:40:30.430](RX ==> [FIXTURE]):ACC2 Meas Off
+ACC2 Meas Off Pass
+@_@
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:30.430](TX ==> [FIXTURE]):Kong To ACC2
+[2016-04-05 17:40:30.430](RX ==> [FIXTURE]):Kong To ACC2
+Kong To ACC2 Pass
+@_@
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:30.430](TX ==> [FIXTURE]):ACC1 Meas On
+[2016-04-05 17:40:30.430](RX ==> [FIXTURE]):ACC1 Meas On
+ACC1 Meas On Pass
+@_@
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):i2c -w 0 0x1a 0x05 0x02
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):i2c -w 0 0x1a 0x05 0x02
+Set  bytes:	0x05 0x02 	Writing 2 bytes
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):accessory --powermode normal
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):accessory --powermode normal
+setting accessory rail to normal mode
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):accessory --powerpin acc1
+[2016-04-05 17:40:30.430](RX ==> [MOBILE]):accessory --powerpin acc1
+setting switch to output power on acc1
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:30.430](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:30.430](TX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+PMU ADC test
+ADC Channel ldo6: 3297.4769 mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Normal vldo6 70mA, [3200,3400]
+============================= START TEST ACC1 NORMAL ILDO6 70MA (Item173) =============================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+PMU ADC test
+ADC Channel ildo6: 84.3768 mA
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Normal ildo6 70mA, [55,115]
+=============================== START TEST ACC1_BRICKID_SWAP1 (Item174) ===============================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 4.8840 mV
+brick_id_usb_d+: 1604mV
+brick_id_usb_d-: 6mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1_BrickID_SWAP1, {NA}
+============================== START TEST ACC1 NORMAL V_R 70MA (Item175) ==============================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1605.0061 mV
+brick_id_usb_d+: 1603mV
+brick_id_usb_d-: 7mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Normal V_R 70mA, {NA}
+============================ START TEST ACC1_NORMAL_CURRENT 70MA (Item176) ============================
+Item Name:ACC1_Normal_Current 70mA, {NA}
+============================= START TEST ACC1 NORMAL VLDO6 100MA (Item177) =============================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:31.431](TX ==> [FIXTURE]):MACC1 BYPASS ON
+[2016-04-05 17:40:31.431](RX ==> [FIXTURE]):MACC1 BYPASS ON
+MACC1 BYPASS ON Pass
+@_@
+
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+PMU ADC test
+ADC Channel ldo6: 3301.3736 mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Normal vldo6 100mA, [3200,3400]
+============================= START TEST ACC1 NORMAL ILDO6 100MA (Item178) =============================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+PMU ADC test
+ADC Channel ildo6: 109.2503 mA
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Normal ildo6 100mA, [85,145]
+================================ START TEST ACC1 BYPASS VLDO6 (Item179) ================================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):accessory --powermode bypass
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):accessory --powermode bypass
+setting accessory rail to bypass mode
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read ldo6 --avg 4
+PMU ADC test
+ADC Channel ldo6: 3771.5758 mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Bypass vldo6, [3400,4350]
+================================ START TEST ACC1 BYPASS ILDO6 (Item180) ================================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read ildo6 --avg 4
+PMU ADC test
+ADC Channel ildo6: 0.4394 mA
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Bypass ildo6, {NA}
+=============================== START TEST ACC1_BRICKID_SWAP2 (Item181) ===============================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):tristar --mux_cfg "dx1 open-brickid"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:31.431](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 5.7997 mV
+brick_id_usb_d+: 1816mV
+brick_id_usb_d-: 9mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1_BrickID_SWAP2, {NA}
+================================= START TEST ACC1 BYPASS V_R (Item182) =================================
+[2016-04-05 17:40:31.431](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:31.431](TX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1815.9340 mV
+brick_id_usb_d+: 1817mV
+brick_id_usb_d-: 8mV
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1 Bypass V_R, {NA}
+============================== START TEST ACC1_BYPASS_IMPEDANCE (Item183) ==============================
+Item Name:ACC1_Bypass_Impedance, {NA}
+=============================== START TEST ACC1_BRICKID_SWAP3 (Item184) ===============================
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):tristar --mux_cfg "dx1 brickid-open"
+>> mux_cfg
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):pmuadc --read brick_id --avg 4
+PMU ADC test
+ADC Channel brick_id: 1815.9340 mV
+brick_id_usb_d+: 1817mV
+brick_id_usb_d-: 7mV
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):pmuset --ldo 6 --off
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):pmuset --ldo 6 --off
+Turning LDO Off
+Done
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):tristar -w "0x01 0x00"
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):tristar -w "0x01 0x00"
+>> write
+write reg 0x1 = 0x0
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):tristar -w "0x02 0x00"
+[2016-04-05 17:40:32.432](RX ==> [MOBILE]):tristar -w "0x02 0x00"
+>> write
+write reg 0x2 = 0x0
+[001D38CC:3020213A] :-) 
+
+Item Name:ACC1_BrickID_SWAP3, {NA}
+================================= START TEST BATTERY VOLTAGE (Item185) =================================
+[2016-04-05 17:40:32.432](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:32.432](TX ==> [MOBILE]):dev -k GasGauge -p
+[2016-04-05 17:40:34.434](RX ==> [MOBILE]):dev -k GasGauge -p
+
+                type: "GasGauge"
+              vendor: "TI"
+               model: "BQ27546"
+          fw-version: "0x601"
+          hw-version: "0xA8"
+         temperature: "29C"
+             voltage: "3817mV"
+  remaining-capacity: "995mAh"
+       full-capacity: "1832mAh"
+             current: "-621mA"
+       time-to-empty: "92min"
+        time-to-full: "N/A"
+       average-power: "-2370mW"
+   charge-percentage: "55%"
+         cycle-count: "0"
+             chem-id: "0x3695"
+       chem-capacity: "1929mAh"
+     design-capacity: "1820mAh"
+    nominal-capacity: "1878mAh"
+ chem-cap-updates-en: "Yes"
+              sealed: "Yes"
+       pairing-count: "1"
+
+[001D38CC:3020213A] :-) 
+
+Item Name:Battery Voltage, [3400,4350]
+================================= START TEST BATTERY CURRENT (Item186) =================================
+Item Name:Battery Current, {NA}
+============================== START TEST BATTERY AVERAGE POWER (Item187) ==============================
+Item Name:Battery Average Power, {NA}
+============================ START TEST BATTERY CHARGE PERCENTAGE (Item188) ============================
+Item Name:Battery Charge Percentage, {NA}
+============================== START TEST I2C ISOLATOR DISABLE (Item189) ==============================
+[2016-04-05 17:40:34.434](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:34.434](TX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 0
+[2016-04-05 17:40:34.434](RX ==> [MOBILE]):socgpio --port 1 --pin 25 --output 0
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:I2C Isolator Disable, {NA}
+====================================== START TEST AMIOK (Item190) ======================================
+Item Name:AmIOK, {NA}
+================================= START TEST UNIT SN CHANGED (Item191) =================================
+[2016-04-05 17:40:34.434](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:34.434](TX ==> [MOBILE]):sn
+[2016-04-05 17:40:34.434](RX ==> [MOBILE]):sn
+Serial: C7CRH00AH7X8
+[001D38CC:3020213A] :-) 
+
+Item Name:Unit SN Changed, {NA}
+================================== START TEST WRITE QT1 CB (Item192) ==================================
+[2016-04-05 17:40:34.434](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:34.434](TX ==> [MOBILE]):rtc --set 20160405174034
+[2016-04-05 17:40:34.434](RX ==> [MOBILE]):rtc --set 20160405174034
+20160405174034
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:34.434](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:34.434](TX ==> [MOBILE]):cbwrite 0x81 fail 1.0d39_EVT_32
+[2016-04-05 17:40:34.434](RX ==> [MOBILE]):cbwrite 0x81 fail 1.0d39_EVT_32
+0x81 Failed 1 1 13 150486034 1.0d39_EVT_32
+OK
+[001D38CC:3020213A] :-) 
+
+Item Name:Write QT1 CB, {NA}
+================================== START TEST QT1 CB CHECK (Item193) ==================================
+[2016-04-05 17:40:34.434](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:34.434](TX ==> [MOBILE]):cbread 0x81
+[2016-04-05 17:40:34.434](RX ==> [MOBILE]):cbread 0x81
+0x81 Failed 1 1 13 150486034 1.0d39_EVT_32
+[001D38CC:3020213A] :-) 
+
+Item Name:QT1 CB Check, {NA}
+=================================== START TEST DISPLAY DUT (Item194) ===================================
+[2016-04-05 17:40:35.435](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:35.435](TX ==> [MOBILE]):bl -h
+[2016-04-05 17:40:35.435](RX ==> [MOBILE]):bl -h
+OK
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:35.435](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:35.435](TX ==> [MOBILE]):pattern f
+[2016-04-05 17:40:35.435](RX ==> [MOBILE]):pattern f
+Finish!
+[001D38CC:3020213A] :-) 
+
+[2016-04-05 17:40:35.435](Clear Buffer ==> [MOBILE]):
+
+[2016-04-05 17:40:35.435](TX ==> [MOBILE]):reset
+Item Name:Display DUT, {NA}
+================================== START TEST RESET FIXTURE (Item195) ==================================
+[2016-04-05 17:40:35.435](Clear Buffer ==> [FIXTURE]):
+
+[2016-04-05 17:40:35.435](TX ==> [FIXTURE]):Reset Fixture
+[2016-04-05 17:40:35.435](RX ==> [FIXTURE]):Reset Fixture
+Reset Fixture Pass
+@_@
+
+Item Name:Reset Fixture, {NA}
+================================== START TEST END_TEST_QT1 (Item197) ==================================
+Item Name:END_TEST_QT1, {NA}

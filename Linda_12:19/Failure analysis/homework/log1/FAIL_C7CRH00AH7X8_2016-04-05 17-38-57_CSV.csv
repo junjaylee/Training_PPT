@@ -1,0 +1,201 @@
+TestName,Status,Value,DownLimit,UpLimit,TestTime
+TSP,0,D10_QT1-PREBURN,,,
+Script_Version,0,1.0,,,
+Overlay_Version,0,1.0d39_EVT_32,,,
+"START_TEST_QT1",0,"PASS",NA,NA,3.246188
+"Initialise Fixture",0,"PASS",NA,NA,0.521224
+"Read Fixture SN",0,"0001",NA,NA,0.034907
+"Check DUT Mode",0,"PASS",NA,NA,6.365132
+"Board ID",0,"D10",NA,NA,0.029172
+"ECID",0,"0x001D38CC3020213A",NA,NA,0.042682
+"SN",0,"C7CRH00AH7X8",NA,NA,0.027082
+"Diag Version Check",0,"24C210ai",NA,NA,0.040718
+"Boost IC Check",0,"0x20",0x20 0x21,0x20 0x21,0.041651
+"Check UOP",0,"PASS",NA,NA,0.004663
+"NetWork CB: Check Previous Station CBs",0,"Network CB Check Return No Need!",NA,NA,0.010761
+"Slot",0,"1",NA,NA,0.002696
+"Get Link Data via ISN From SFC",0,"PASS",NA,NA,0.104684
+"Set COF Function",0,"PASS",NA,NA,0.161296
+"Write CB Incomplete",0,"PASS",NA,NA,0.099239
+"I2C Isolator Enable",0,"OK",NA,NA,0.028890
+"CG Color",0,"Black",NA,NA,0.018738
+"PROX_QT_DEV_ID",0,"208",208,208,0.082062
+"PROX_QT_REV_ID",0,"18",18,18,0.006668
+"PROX_QT_NO_TARGET_RAW_DIST_AVE",0,"35.168491",-20,100,0.826905
+"PROX_QT_NO_TARGET_RAW_DIST_STD",0,"1.056934",0.01,3,0.005750
+"PROX_QT_NO_TARGET_SIG_AVE",0,"83.881032",20,300,0.006286
+"PROX_QT_NO_TARGET_SIG_STD",0,"0.730568",0.01,3,0.006460
+"PROX_QT_NO_TARGET_AMB_AVE",0,"1.188639",0.5,3,0.005843
+"PROX_QT_NO_TARGET_AMB_STD",0,"0.160725",0.01,0.5,0.006323
+"PROX_QT_TARGET_RAW_DIST_AVE",0,"-54.724070",-70,0,1.235935
+"PROX_QT_TARGET_RAW_DIST_STD",0,"1.167860",0.01,3,0.005756
+"PROX_QT_TARGET_SIG_AVE",0,"930.491101",500,1200,0.006245
+"PROX_QT_TARGET_SIG_STD",0,"3.948696",0.01,15,0.006782
+"PROX_QT_TARGET_AMB_AVE",0,"6.572083",3,9,0.006340
+"PROX_QT_TARGET_AMB_STD",0,"0.185222",0.01,0.5,0.006617
+"X582 Powered Status",0,"yes",yes,yes,0.570133
+"X582 Module SN from diag",0,"F58611600TGH24G3E1",NA,NA,0.054083
+"Compare X582 Module SN with SFC",0,"F58611600TGH24G3E1",NA,NA,0.011332
+"Burn X582 Module SN",0,"F58611600TGH24G3E1",NA,NA,0.070887
+"X582 Undetect Test",0,"no",no,no,1.812154
+"X582 Detect Test",0,"yes",yes,yes,1.589331
+"Sensor-Status_Init",0,"17",NA,NA,0.008045
+"Indicator_Init",0,"4",NA,NA,0.007600
+"Sensor-Status_Detect",0,"19",NA,NA,0.007650
+"Indicator_Detect",0,"6",NA,NA,0.007481
+"Sensor-Status_Undetect",0,"7",NA,NA,0.006980
+"Indicator_Undetect",0,"142",NA,NA,0.007880
+"Turtle_Read_Init",0,"47506",NA,NA,0.005474
+"Turtle_Read_Detect",0,"48241",NA,NA,0.006033
+"Turtle_Read_Delta",0,"735.0",NA,NA,0.005646
+"3K Tone SPK to MIC1_Frequency(L)",0,"3000.000000",2996,3004,1.189343
+"3K Tone SPK to MIC1_Max_Power(L)",0,"0.029761",NA,NA,0.006905
+"3K Tone SPK to MIC4_Frequency(R)",0,"3000.000000",2996,3004,0.006043
+"3K Tone SPK to MIC4_Max_Power(R)",0,"0.266928",NA,NA,0.006024
+"1K Tone to MIC2_Frequency(L)",0,"999.023437",996,1004,0.842681
+"1K Tone to MIC2_Max_Power(L)",0,"0.380424",NA,NA,0.006099
+"1K Tone to MIC2_Frequency(R)",0,"999.023437",996,1004,0.005917
+"1K Tone to MIC2_Max_Power(R)",0,"0.380424",NA,NA,0.006305
+"1K Tone to Low_Power_MIC2_Frequency(L)",0,"996.093750",950,1050,1.038630
+"1K Tone to Low_Power_MIC2_Max_Power(L)",0,"0.440206",NA,NA,0.006595
+"400 Tone to Low_Power_MIC2_Frequency(L)",0,"398.437500",380,420,0.684196
+"400 Tone to Low_Power_MIC2_Max_Power(L)",0,"0.082425",NA,NA,0.006724
+"3K Tone TopSpeaker to MIC3_Frequency(L)",0,"3000.000000",2996,3004,1.126350
+"3K Tone TopSpeaker to MIC3_Max_Power(L)",0,"0.010785",NA,NA,0.005908
+"3K Tone TopSpeaker to MIC3_Frequency(R)",0,"3000.000000",2996,3004,0.006442
+"3K Tone TopSpeaker to MIC3_Max_Power(R)",0,"0.010785",NA,NA,0.005855
+"3K Tone TopSpk to Low_Power_MIC3_FR(R)",0,"2988.281250",2850,3150,1.454826
+"3K Tone TopSpk to Low_Power_MIC3_Max_PR(R)",0,"0.073780",NA,NA,0.006673
+"3K Tone No HAC to MIC4_Frequency",0,"3000.000000",2990,3010,1.070327
+"3K Tone No HAC to MIC4_Peak Mag",0,"0.000228",NA,0.005,0.008331
+"3K Tone HAC to MIC4_Frequency",0,"3000.000000",2996,3004,1.386469
+"3K Tone HAC to MIC4_Peak Mag",0,"0.061434",NA,NA,0.059396
+"3K Tone HAC Ratio",0,"269.4",NA,NA,0.005848
+"ALS ID check",0,"0x9B",0x9B,0x9B,0.075577
+"Clear Test No Light",0,"0",0,8,2.507978
+"IR Test No Light",0,"0",0,8,0.007043
+"Clear Test With Light(Black)",0,"10634.8",NA,NA,2.229555
+"IR Test With Light(Black)",0,"781.2",NA,NA,0.006933
+"ALS_Clear_Test_Delta",0,"10634.79980",10,NA,0.005621
+"ALS_IR_Test_Delta",0,"781.20001",NA,NA,0.005618
+"Hold",0,"PASS",PASS,PASS,1.184230
+"Vol_Up",0,"PASS",PASS,PASS,1.145802
+"Vol_Dw",0,"PASS",PASS,PASS,1.164720
+"Ringer",1,"FAIL",PASS,PASS,3.371067
+"PMUHold",0,"PASS",PASS,PASS,0.013022
+"PMUVolDown",0,"PASS",PASS,PASS,0.011629
+"PMURinger",1,"FAIL",PASS,PASS,0.011959
+"Button Test",1,"FAIL",PASS,PASS,0.007039
+"Muon_Off_MaxValue",0,"0.00",0,100,1.896397
+"Muon_iMax_Current_Setting",0,"17616",NA,NA,0.042403
+"Muon_iMax_MaxValue",0,"426.00",250,850,1.557704
+"Muon_20mA_MaxValue",0,"476.00",250,850,1.563281
+"Muon_FlashCurrent_Check",0,"79600",79600,79600,0.099665
+"Muon_80mA_01_MaxCounts",0,"1496.00",1000,3000,1.012353
+"Muon_80mA_02_MaxCounts",0,"1500.00",1000,3000,1.011115
+"Muon_80mA_MaxValue",0,"1498.00",NA,NA,1.526845
+"Muon_Strobe_Ratio",0,"3.15",2.8,3.6,0.008492
+"Muon_iMax_Strobe_Ratio",0,"3.52",2.8,4.0,0.005877
+"Muon Fault Register",0,"0x02",0x02,0x02,0.081728
+"Hawking Test Peak Magnitude",0,"0.074922",NA,NA,1.664316
+"Hawking Test Frequency",0,"499.511718",485,515,0.005786
+"Hawking Test DC Magnitude",0,"0.000109",NA,NA,0.006261
+"Hawking Test SINAD",0,"61.296310",NA,NA,0.005841
+"Hawking Test Peak Power",0,"-22.507727",NA,NA,0.005938
+"Hawking Test Signal Power",0,"-22.086640",NA,NA,0.005883
+"Hawking Test Noise Power",0,"-83.382951",NA,NA,0.005898
+"Hawking Test Average Noise PSD",0,"-108.568090",NA,NA,0.006052
+"Hawking Test Noise Margin",0,"86.060363",NA,NA,0.005813
+"Hawking Test THD+N",0,"-1.349218",NA,NA,0.005790
+"Neon1 Revision",0,"3",3,3,2.112505
+"Neon2 Revision",0,"3",3,3,0.008701
+"4xLED Measure Strobe_Flash Mode",0,"PASS",PASS,PASS,1.441000
+"Neon1 4xLED Register 0xA Check",0,"1",1,1,0.036957
+"Neon1 4xLED Register 0xB Check",0,"0",0,0,0.039608
+"Neon2 4xLED Register 0xA Check",0,"1",1,1,0.037056
+"Neon2 4xLED Register 0xB Check",0,"0",0,0,0.040576
+"4xLED Measure Strobe Off",0,"PASS",PASS,PASS,0.879262
+"Neon1LED1 Measure Cool Strobe_Flash Mode",0,"PASS",PASS,PASS,2.187159
+"Neon1LED1 Register 0xA Check",0,"1",1,1,0.038573
+"Neon1LED1 Register 0xB Check",0,"0",0,0,0.036526
+"Neon1LED1 Measure Cool Strobe Off",0,"PASS",PASS,PASS,0.382712
+"Neon1LED2 Measure Amber Strobe_Flash Mode",0,"PASS",PASS,PASS,0.598440
+"Neon1LED2 Register 0xA Check",0,"1",1,1,0.038612
+"Neon1LED2 Register 0xB Check",0,"0",0,0,0.036189
+"Neon1LED2 Measure Amber Strobe Off",0,"PASS",PASS,PASS,0.379084
+"Neon2LED1 Measure Cool Strobe_Flash Mode",0,"PASS",PASS,PASS,0.613620
+"Neon2LED1 Register 0xA Check",0,"1",1,1,0.039290
+"Neon2LED1 Register 0xB Check",0,"0",0,0,0.037511
+"Neon2LED1 Measure Cool Strobe Off",0,"PASS",PASS,PASS,0.392566
+"Neon2LED2 Measure Amber Strobe_Flash Mode",0,"PASS",PASS,PASS,0.619830
+"Neon2LED2 Register 0xA Check",0,"1",1,1,0.040447
+"Neon2LED2 Register 0xB Check",0,"0",0,0,0.038212
+"Neon2LED2 Measure Amber Strobe Off",0,"PASS",PASS,PASS,0.566156
+"Find Camera_Back",0,"back  detected",back  detected,back  detected,0.006735
+"Camera Dli_Back",0,"Pass",NA,NA,3.735378
+"Back Camera RGB",0,"PASS",NA,NA,6.287946
+"SphereSelfTest",0,"Pass",Pass,Pass,7.845476
+"Back Camera Displacement_Avg[-850 0]",0,"3.392201",NA,NA,0.007894
+"Back Camera Displacement_Std[-850 0]",0,"1.854994",NA,NA,0.007017
+"Back Camera Displacement_Avg[-600 600]",0,"3.816480",NA,NA,0.003997
+"Back Camera Displacement_Std[-600 600]",0,"1.791110",NA,NA,0.003908
+"Back Camera Displacement_Avg[0 850]",0,"3.190236",NA,NA,0.004010
+"Back Camera Displacement_Std[0 850]",0,"1.282127",NA,NA,0.003920
+"Back Camera Displacement_Avg[600 600]",0,"3.588767",NA,NA,0.003975
+"Back Camera Displacement_Std[600 600]",0,"1.421781",NA,NA,0.004051
+"Back Camera Displacement_Avg[850 0]",0,"3.597260",NA,NA,0.003976
+"Back Camera Displacement_Std[850 0]",0,"2.066077",NA,NA,0.003959
+"Back Camera Displacement_Avg[600 -600]",0,"3.926105",NA,NA,0.004045
+"Back Camera Displacement_Std[600 -600]",0,"2.178032",NA,NA,0.004035
+"Back Camera Displacement_Avg[0 -850]",0,"3.248831",NA,NA,0.003951
+"Back Camera Displacement_Std[0 -850]",0,"1.489650",NA,NA,0.004551
+"Back Camera Displacement_Avg[-600 -600]",0,"3.275000",NA,NA,0.003899
+"Back Camera Displacement_Std[-600 -600]",0,"1.567241",NA,NA,0.004037
+"Find Camera_Front",0,"front  detected",front  detected,front  detected,0.006001
+"Camera Dli_Front",0,"Pass",NA,NA,3.528615
+"Front Camera RGB",0,"PASS",NA,NA,6.155253
+"Lifetime Max Temperature",0,"30.0",0,60,0.555998
+"ACC2 Zero Current Backpower Test",0,"0x0",0x0,0x0,0.183367
+"ACC1 Zero Current Backpower Test",0,"0x0",0x0,0x0,0.125448
+"ACC2 Normal vldo6 70mA",0,"3304.8373",3200,3400,0.365312
+"ACC2 Normal ildo6 70mA",0,"72.0279",50,115,0.140502
+"ACC2 Normal V_R 70mA",0,"1600.1221",NA,NA,0.178977
+"ACC2 Normal ildo6 100mA",0,"106.8772",80,145,0.072084
+"ACC2 Normal V_R 100mA",0,"1589.7435",NA,NA,0.152813
+"ACC2_Normal_Current 100mA",0,"105.98290",NA,NA,0.006468
+"ACC2_BrickID_SWAP1",0,"3.9682",NA,NA,0.177525
+"ACC2 Bypass vldo6",0,"3773.3076",3400,4350,0.102130
+"ACC2 Bypass ildo6",0,"0.4834",NA,NA,0.033556
+"ACC2 Bypass V_R",0,"1813.7973",NA,NA,0.180867
+"ACC2_Bypass_Impedance",0,"120.91982",NA,NA,0.013065
+"ACC2_BrickID_SWAP2",0,"8.8522",NA,NA,0.177443
+"ACC2_BrickID_SWAP3",0,"1809.2185",NA,NA,0.204077
+"ACC1 Normal vldo6 70mA",0,"3297.4769",3200,3400,0.659339
+"ACC1 Normal ildo6 70mA",0,"84.3768",55,115,0.039047
+"ACC1_BrickID_SWAP1",0,"4.8840",NA,NA,0.179629
+"ACC1 Normal V_R 70mA",0,"1605.0061",NA,NA,0.179514
+"ACC1_Normal_Current 70mA",0,"107.00040",NA,NA,0.006439
+"ACC1 Normal vldo6 100mA",0,"3301.3736",3200,3400,0.071941
+"ACC1 Normal ildo6 100mA",0,"109.2503",85,145,0.037210
+"ACC1 Bypass vldo6",0,"3771.5758",3400,4350,0.067434
+"ACC1 Bypass ildo6",0,"0.4394",NA,NA,0.043699
+"ACC1_BrickID_SWAP2",0,"5.7997",NA,NA,0.177360
+"ACC1 Bypass V_R",0,"1815.9340",NA,NA,0.179846
+"ACC1_Bypass_Impedance",0,"121.06226",NA,NA,0.013236
+"ACC1_BrickID_SWAP3",0,"1815.9340",NA,NA,0.269621
+"Battery Voltage",0,"3817",3400,4350,2.110826
+"Battery Current",0,"-621",NA,NA,0.017202
+"Battery Average Power",0,"-2370",NA,NA,0.006271
+"Battery Charge Percentage",0,"55",NA,NA,0.005894
+"I2C Isolator Disable",0,"OK",NA,NA,0.031439
+"AmIOK",0,"PASS",NA,NA,0.004510
+"Unit SN Changed",0,"C7CRH00AH7X8",NA,NA,0.024302
+"Write QT1 CB",0,"PASS",NA,NA,0.104575
+"QT1 CB Check",0,"Failed",NA,NA,0.041045
+"Display DUT",0,"PASS",NA,NA,0.059209
+"Reset Fixture",0,"PASS",NA,NA,0.660675
+"END_TEST_QT1",0,"PASS",NA,NA,0.005877
+ISN,0,C7CRH00AH7X8,,,
+Test Start Time,0,17:38:57,,,
+Test End Time,0,17:40:35,,,
+Test Cost Time,0,98.557880,,,
